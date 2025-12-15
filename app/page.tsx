@@ -1,0 +1,285 @@
+const links = {
+  mail: "erdogand159@gmail.com",
+  phone: "+90 545 286 50 78",
+  github: "https://github.com/erdogndmn",
+  linkedin: "https://www.linkedin.com/in/halit-erdoğan-duman-439163261/",
+  cv: "cv.pdf",
+};
+
+const skills = [
+  "HTML (Giriş Seviye)",
+  "Python (Giriş Seviye)",
+  "Web İçerik Düzenleme",
+  "Google Ads (Temel)",
+  "CorelDRAW",
+  "Adobe Illustrator",
+  "AutoCAD",
+];
+
+const experience = [
+  {
+    role: "Kurumsal Satış Temsilcisi",
+    company: "Karakaş Medya",
+    date: "11/2024 – 12/2024",
+    bullets: [
+      "Kurumsal müşteriler için ihtiyaç analizi",
+      "Yeni müşteri kazanımı ve satış süreçlerinin yürütülmesi",
+      "Satış sonrası müşteri ilişkileri ve koordinasyon",
+      "Pazar araştırması ve çözüm sunma",
+    ],
+  },
+  {
+    role: "Tasarım ve Üretim Elemanı",
+    company: "Multi Reklam",
+    date: "08/2025 – 10/2025",
+    bullets: [
+      "Firma web sitelerinde içerik ve görsel düzenlemeleri",
+      "Google Ads çalışmaları ile dijital görünürlüğün artırılmasına destek",
+      "CorelDRAW, Adobe Illustrator ve AutoCAD ile tasarım uygulamaları",
+      "Dijital reklam ve üretim süreçlerinde teknik destek",
+    ],
+  },
+];
+
+const projects = [
+  {
+    title: "Kişisel Tanıtım Web Sitesi",
+    description:
+      "HTML kullanarak kişisel tanıtım amaçlı tek sayfalık (statik) web sitesi. Öğrenme ve portföy amaçlı geliştirildi.",
+    stack: ["HTML", "CSS"],
+    live: "",
+    repo: "",
+  },
+  {
+    title: "Bu Portfolyo (Next.js)",
+    description:
+      "CV, bağlantılar ve projelerimi tek sayfada topladığım portfolyo. Basit, hızlı, mobil uyumlu.",
+    stack: ["Next.js", "TypeScript", "Tailwind"],
+    live: "",
+    repo: "",
+  },
+];
+
+function Chip({ children }: { children: React.ReactNode }) {
+  return (
+    <span className="rounded-full border border-zinc-800 bg-zinc-900/40 px-3 py-1 text-sm text-zinc-200">
+      {children}
+    </span>
+  );
+}
+
+function Card({
+  title,
+  subtitle,
+  children,
+}: {
+  title: string;
+  subtitle?: string;
+  children: React.ReactNode;
+}) {
+  return (
+    <div className="group rounded-2xl border border-zinc-800 bg-zinc-900/30 p-6 shadow-[0_0_0_1px_rgba(255,255,255,0.02)] transition hover:-translate-y-0.5 hover:border-zinc-700 hover:bg-zinc-900/50">
+      <div className="flex items-start justify-between gap-4">
+        <div>
+          <h3 className="text-lg font-semibold tracking-tight">{title}</h3>
+          {subtitle ? (
+            <p className="mt-1 text-sm text-zinc-400">{subtitle}</p>
+          ) : null}
+        </div>
+        <div className="h-10 w-10 rounded-2xl bg-gradient-to-br from-zinc-800 to-zinc-900 ring-1 ring-white/5 transition group-hover:scale-[1.03]" />
+      </div>
+      <div className="mt-4 text-zinc-300">{children}</div>
+    </div>
+  );
+}
+
+export default function Page() {
+  return (
+    <main className="min-h-screen bg-zinc-950 text-zinc-50">
+      {/* üstte hafif ışık efekti */}
+      <div className="pointer-events-none fixed inset-0 -z-10">
+        <div className="absolute left-1/2 top-[-200px] h-[500px] w-[900px] -translate-x-1/2 rounded-full bg-zinc-800/20 blur-3xl" />
+      </div>
+
+      <div className="mx-auto max-w-4xl px-6 py-16">
+        {/* HERO */}
+        <section className="space-y-5">
+          <div className="inline-flex items-center gap-2 rounded-full border border-zinc-800 bg-zinc-900/40 px-4 py-2 text-sm text-zinc-200">
+            <span className="h-2 w-2 rounded-full bg-emerald-400" />
+            Görüşmeye hazır • Junior Web / Yazılım Adayı
+          </div>
+
+          <h1 className="text-4xl font-semibold tracking-tight sm:text-5xl">
+            Halit Erdoğan Duman
+          </h1>
+
+          <p className="max-w-2xl text-lg leading-relaxed text-zinc-300">
+            Bilgisayar Programcılığı öğrencisi. HTML ve Python giriş seviyesinde.
+            Dijital reklam ajansı deneyimiyle içerik, görünürlük ve kullanıcı odaklı
+            bakış açısını birleştiriyorum.
+          </p>
+
+          {/* CTA */}
+          <div className="flex flex-wrap gap-3">
+            <a
+              href={links.cv}
+              target="_blank"
+              rel="noreferrer"
+              className="rounded-2xl bg-white px-5 py-3 text-sm font-medium text-zinc-950 transition hover:opacity-90"
+            >
+              CV’yi Aç (PDF)
+            </a>
+            <a
+              href={links.github}
+              target="_blank"
+              rel="noreferrer"
+              className="rounded-2xl border border-zinc-800 bg-zinc-900/30 px-5 py-3 text-sm font-medium text-zinc-100 transition hover:bg-zinc-900/60"
+            >
+              GitHub
+            </a>
+            <a
+              href={links.linkedin}
+              target="_blank"
+              rel="noreferrer"
+              className="rounded-2xl border border-zinc-800 bg-zinc-900/30 px-5 py-3 text-sm font-medium text-zinc-100 transition hover:bg-zinc-900/60"
+            >
+              LinkedIn
+            </a>
+          </div>
+
+          {/* quick info */}
+          <div className="flex flex-wrap gap-2 pt-2">
+            <Chip>📍 İstanbul / Kartal</Chip>
+            <Chip>📞 {links.phone}</Chip>
+            <Chip>✉️ {links.mail}</Chip>
+          </div>
+        </section>
+
+        {/* GRID */}
+        <section className="mt-14 grid gap-6 md:grid-cols-2">
+          <Card title="Profesyonel Profil" subtitle="Kısa özet">
+            <p className="leading-relaxed">
+              Multi Reklam bünyesinde web sitesi içerik ve görsel düzenlemeleri,
+              Google Ads çalışmaları ve üretim süreçlerinde teknik destek sağladım.
+              Kariyerimi web ve yazılım alanında, kullanıcı ve ticari ihtiyaçları
+              birlikte anlayan bir bakış açısıyla geliştirmeyi hedefliyorum.
+            </p>
+          </Card>
+
+          <Card title="Eğitim" subtitle="Akademik geçmiş">
+            <ul className="space-y-2">
+              <li>
+                <span className="font-medium text-zinc-100">Anadolu Üniversitesi</span>{" "}
+                — Bilgisayar Programcılığı (Önlisans, Devam Ediyor)
+              </li>
+              <li>
+                <span className="font-medium text-zinc-100">Selçuk Üniversitesi</span>{" "}
+                — İngiliz Dili ve Edebiyatı (Lisans, Bırakıldı)
+              </li>
+            </ul>
+          </Card>
+
+          <div className="md:col-span-2">
+            <Card title="İş Deneyimi" subtitle="Rol ve sorumluluklar">
+              <div className="grid gap-4 md:grid-cols-2">
+                {experience.map((e) => (
+                  <div
+                    key={e.role + e.company}
+                    className="rounded-2xl border border-zinc-800 bg-zinc-950/40 p-5"
+                  >
+                    <div className="flex items-start justify-between gap-3">
+                      <div>
+                        <p className="font-semibold text-zinc-100">
+                          {e.role}
+                        </p>
+                        <p className="text-sm text-zinc-400">
+                          {e.company} • {e.date}
+                        </p>
+                      </div>
+                    </div>
+                    <ul className="mt-3 list-disc space-y-1 pl-5 text-sm text-zinc-300">
+                      {e.bullets.map((b) => (
+                        <li key={b}>{b}</li>
+                      ))}
+                    </ul>
+                  </div>
+                ))}
+              </div>
+            </Card>
+          </div>
+
+          <div className="md:col-span-2">
+            <Card title="Projeler" subtitle="Mini proje + portfolyo">
+              <div className="grid gap-4 md:grid-cols-2">
+                {projects.map((p) => (
+                  <div
+                    key={p.title}
+                    className="rounded-2xl border border-zinc-800 bg-zinc-950/40 p-5 transition hover:border-zinc-700"
+                  >
+                    <p className="font-semibold text-zinc-100">{p.title}</p>
+                    <p className="mt-2 text-sm leading-relaxed text-zinc-300">
+                      {p.description}
+                    </p>
+
+                    <div className="mt-3 flex flex-wrap gap-2">
+                      {p.stack.map((s) => (
+                        <span
+                          key={s}
+                          className="rounded-full bg-zinc-800 px-3 py-1 text-xs text-zinc-200"
+                        >
+                          {s}
+                        </span>
+                      ))}
+                    </div>
+
+                    <div className="mt-4 flex flex-wrap gap-3 text-sm">
+  {p.live && (
+    <a
+      className="underline text-zinc-200"
+      href={p.live}
+      target="_blank"
+      rel="noreferrer"
+    >
+      Live
+    </a>
+  )}
+  {p.repo && (
+    <a
+      className="underline text-zinc-200"
+      href={p.repo}
+      target="_blank"
+      rel="noreferrer"
+    >
+      GitHub
+    </a>
+  )}
+</div>
+
+                  </div>
+                ))}
+              </div>
+            </Card>
+          </div>
+
+          <Card title="Teknik Beceriler" subtitle="Araçlar & yetkinlikler">
+            <div className="flex flex-wrap gap-2">
+              {skills.map((s) => (
+                <Chip key={s}>{s}</Chip>
+              ))}
+            </div>
+          </Card>
+
+          <Card title="Yabancı Dil" subtitle="İletişim & okuma">
+            <p className="leading-relaxed">
+              İngilizce — teknik dokümantasyon ve yazılım içeriklerini okuyabilme.
+            </p>
+          </Card>
+        </section>
+
+        <footer className="mt-16 text-sm text-zinc-500">
+          © {new Date().getFullYear()} Halit Erdoğan Duman
+        </footer>
+      </div>
+    </main>
+  );
+}
