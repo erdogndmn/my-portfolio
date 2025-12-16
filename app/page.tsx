@@ -9,15 +9,26 @@ const links = {
   cv: "/cv-2025.pdf",
 };
 
-const skills = [
-  "HTML (Giriş Seviye)",
-  "Python (Giriş Seviye)",
-  "Web İçerik Düzenleme",
-  "Google Ads (Temel)",
-  "CorelDRAW",
-  "Adobe Illustrator",
-  "AutoCAD",
-];
+const skills = {
+  tr: [
+    "HTML (Giriş Seviye)",
+    "Python (Giriş Seviye)",
+    "Web İçerik Düzenleme",
+    "Google Ads (Temel)",
+    "CorelDRAW",
+    "Adobe Illustrator",
+    "AutoCAD",
+  ],
+  en: [
+    "HTML (Beginner)",
+    "Python (Beginner)",
+    "Website Content Editing",
+    "Google Ads (Basic)",
+    "CorelDRAW",
+    "Adobe Illustrator",
+    "AutoCAD",
+  ],
+} as const;
 
 const experience = {
   tr: [
@@ -71,31 +82,50 @@ const experience = {
   ],
 } as const;
 
-
-const projects = [
-  {
-    title: "Kişisel Tanıtım Web Sitesi",
-    description:
-      "HTML kullanarak kişisel tanıtım amaçlı tek sayfalık (statik) web sitesi. Öğrenme ve portföy amaçlı geliştirildi.",
-    stack: ["HTML", "CSS"],
-    live: "",
-    repo: "",
-  },
-  {
-    title: "Bu Portfolyo (Next.js)",
-    description:
-      "CV, bağlantılar ve projelerimi tek sayfada topladığım portfolyo. Basit, hızlı, mobil uyumlu.",
-    stack: ["Next.js", "TypeScript", "Tailwind"],
-    live: "",
-    repo: "",
-  },
-];
+const projects = {
+  tr: [
+    {
+      title: "Kişisel Tanıtım Web Sitesi",
+      description:
+        "HTML kullanarak kişisel tanıtım amaçlı tek sayfalık (statik) web sitesi. Öğrenme ve portföy amaçlı geliştirildi.",
+      stack: ["HTML", "CSS"],
+      live: "",
+      repo: "",
+    },
+    {
+      title: "Bu Portfolyo (Next.js)",
+      description:
+        "CV, bağlantılar ve projelerimi tek sayfada topladığım portfolyo. Basit, hızlı, mobil uyumlu.",
+      stack: ["Next.js", "TypeScript", "Tailwind"],
+      live: "",
+      repo: "",
+    },
+  ],
+  en: [
+    {
+      title: "Personal Landing Website",
+      description:
+        "A single-page (static) personal introduction website built with HTML. Developed for learning and portfolio purposes.",
+      stack: ["HTML", "CSS"],
+      live: "",
+      repo: "",
+    },
+    {
+      title: "This Portfolio (Next.js)",
+      description:
+        "A fast, simple, mobile-friendly portfolio where I collect my CV, links, and projects on one page.",
+      stack: ["Next.js", "TypeScript", "Tailwind"],
+      live: "",
+      repo: "",
+    },
+  ],
+} as const;
 
 type Lang = "tr" | "en";
 
 const t = {
   tr: {
-    readyBadge: "Görüşmeye hazır • Junior Web / Yazılım Adayı",
+    readyBadge: "Junior Web / Yazılım Adayı",
     heroDesc:
       "Bilgisayar Programcılığı öğrencisi. HTML ve Python giriş seviyesinde. Dijital reklam ajansı deneyimiyle içerik, görünürlük ve kullanıcı odaklı bakış açısını birleştiriyorum.",
     cvBtn: "CV’yi İndir (PDF)",
@@ -126,7 +156,7 @@ const t = {
     toggleLabel: "EN",
   },
   en: {
-    readyBadge: "Available for interviews • Junior Web / Software Candidate",
+    readyBadge: "Junior Web / Software Candidate",
     heroDesc:
       "Computer Programming student. Beginner level in HTML and Python. I combine digital agency experience with a user-focused mindset and an eye for visibility and content quality.",
     cvBtn: "Download CV (PDF)",
@@ -203,13 +233,11 @@ export default function Page() {
 
   return (
     <main className="min-h-screen bg-zinc-950 text-zinc-50">
-      {/* üstte hafif ışık efekti */}
       <div className="pointer-events-none fixed inset-0 -z-10">
         <div className="absolute left-1/2 top-[-200px] h-[500px] w-[900px] -translate-x-1/2 rounded-full bg-zinc-800/20 blur-3xl" />
       </div>
 
       <div className="mx-auto max-w-4xl px-6 py-20">
-        {/* HERO */}
         <section className="space-y-5">
           <div className="flex flex-wrap items-center gap-3">
             <div className="inline-flex items-center gap-2 rounded-full border border-zinc-800 bg-zinc-900/40 px-4 py-2 text-sm text-zinc-200">
@@ -234,7 +262,6 @@ export default function Page() {
             {copy.heroDesc}
           </p>
 
-          {/* CTA */}
           <div className="flex flex-wrap gap-3">
             <a
               href={links.cv}
@@ -263,7 +290,6 @@ export default function Page() {
             </a>
           </div>
 
-          {/* quick info */}
           <div className="flex flex-wrap gap-2 pt-2">
             <Chip>{copy.location}</Chip>
             <Chip>📞 {links.phone}</Chip>
@@ -271,7 +297,6 @@ export default function Page() {
           </div>
         </section>
 
-        {/* GRID */}
         <section className="mt-14 grid gap-6 md:grid-cols-2">
           <Card title={copy.aboutTitle} subtitle={copy.aboutSubtitle}>
             <p className="leading-relaxed">{copy.aboutText}</p>
@@ -325,7 +350,7 @@ export default function Page() {
           <div className="md:col-span-2">
             <Card title={copy.projTitle} subtitle={copy.projSubtitle}>
               <div className="grid gap-4 md:grid-cols-2">
-                {projects.map((p) => (
+                {projects[lang].map((p) => (
                   <div
                     key={p.title}
                     className="rounded-2xl border border-zinc-800 bg-zinc-950/40 p-5 transition hover:border-zinc-700"
@@ -377,7 +402,7 @@ export default function Page() {
 
           <Card title={copy.skillsTitle} subtitle={copy.skillsSubtitle}>
             <div className="flex flex-wrap gap-2">
-              {skills.map((s) => (
+              {skills[lang].map((s) => (
                 <Chip key={s}>{s}</Chip>
               ))}
             </div>
