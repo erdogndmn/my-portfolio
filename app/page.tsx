@@ -19,30 +19,58 @@ const skills = [
   "AutoCAD",
 ];
 
-const experience = [
-  {
-    role: "Kurumsal Satış Temsilcisi",
-    company: "Karakaş Medya",
-    date: "11/2024 – 12/2024",
-    bullets: [
-      "Kurumsal müşteriler için ihtiyaç analizi",
-      "Yeni müşteri kazanımı ve satış süreçlerinin yürütülmesi",
-      "Satış sonrası müşteri ilişkileri ve koordinasyon",
-      "Pazar araştırması ve çözüm sunma",
-    ],
-  },
-  {
-    role: "Tasarım ve Üretim Elemanı",
-    company: "Multi Reklam",
-    date: "08/2025 – 10/2025",
-    bullets: [
-      "Firma web sitelerinde içerik ve görsel düzenlemeleri",
-      "Google Ads çalışmaları ile dijital görünürlüğün artırılmasına destek",
-      "CorelDRAW, Adobe Illustrator ve AutoCAD ile tasarım uygulamaları",
-      "Dijital reklam ve üretim süreçlerinde teknik destek",
-    ],
-  },
-];
+const experience = {
+  tr: [
+    {
+      role: "Kurumsal Satış Temsilcisi",
+      company: "Karakaş Medya",
+      date: "11/2024 – 12/2024",
+      bullets: [
+        "Kurumsal müşteriler için ihtiyaç analizi",
+        "Yeni müşteri kazanımı ve satış süreçlerinin yürütülmesi",
+        "Satış sonrası müşteri ilişkileri ve koordinasyon",
+        "Pazar araştırması ve çözüm sunma",
+      ],
+    },
+    {
+      role: "Tasarım ve Üretim Elemanı",
+      company: "Multi Reklam",
+      date: "08/2025 – 10/2025",
+      bullets: [
+        "Firma web sitelerinde içerik ve görsel düzenlemeleri",
+        "Google Ads çalışmaları ile dijital görünürlüğün artırılmasına destek",
+        "CorelDRAW, Adobe Illustrator ve AutoCAD ile tasarım uygulamaları",
+        "Dijital reklam ve üretim süreçlerinde teknik destek",
+      ],
+    },
+  ],
+
+  en: [
+    {
+      role: "Corporate Sales Representative",
+      company: "Karakaş Medya",
+      date: "11/2024 – 12/2024",
+      bullets: [
+        "Needs analysis for corporate clients",
+        "Managing new client acquisition and sales processes",
+        "Post-sales customer relations and coordination",
+        "Market research and solution development",
+      ],
+    },
+    {
+      role: "Design & Production Assistant",
+      company: "Multi Reklam",
+      date: "08/2025 – 10/2025",
+      bullets: [
+        "Content and visual edits for company websites",
+        "Supporting digital visibility through Google Ads campaigns",
+        "Design implementations using CorelDRAW, Adobe Illustrator, and AutoCAD",
+        "Technical support in digital advertising and production processes",
+      ],
+    },
+  ],
+} as const;
+
 
 const projects = [
   {
@@ -269,7 +297,7 @@ export default function Page() {
           <div className="md:col-span-2">
             <Card title={copy.expTitle} subtitle={copy.expSubtitle}>
               <div className="grid gap-4 md:grid-cols-2">
-                {experience.map((e) => (
+                {experience[lang].map((e) => (
                   <div
                     key={e.role + e.company}
                     className="rounded-2xl border border-zinc-800 bg-zinc-950/40 p-5"
