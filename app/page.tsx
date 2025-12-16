@@ -2,8 +2,8 @@ const links = {
   mail: "erdogand159@gmail.com",
   phone: "+90 545 286 50 78",
   github: "https://github.com/erdogndmn",
-  linkedin: "https://www.linkedin.com/in/halit-erdoğan-duman-439163261/",
-  cv: "cv.pdf",
+  linkedin: "https://www.linkedin.com/in/halit-erdogan-duman/",
+  cv: "/cv.pdf",
 };
 
 const skills = [
@@ -81,7 +81,11 @@ function Card({
     <div className="group rounded-2xl border border-zinc-800 bg-zinc-900/30 p-6 shadow-[0_0_0_1px_rgba(255,255,255,0.02)] transition hover:-translate-y-0.5 hover:border-zinc-700 hover:bg-zinc-900/50">
       <div className="flex items-start justify-between gap-4">
         <div>
-          <h3 className="text-lg font-semibold tracking-tight">{title}</h3>
+          <<h3 className="text-lg font-semibold tracking-tight flex items-center gap-3">
+  <span className="h-px w-6 bg-zinc-700" />
+  {title}
+</h3>
+
           {subtitle ? (
             <p className="mt-1 text-sm text-zinc-400">{subtitle}</p>
           ) : null}
@@ -101,11 +105,11 @@ export default function Page() {
         <div className="absolute left-1/2 top-[-200px] h-[500px] w-[900px] -translate-x-1/2 rounded-full bg-zinc-800/20 blur-3xl" />
       </div>
 
-      <div className="mx-auto max-w-4xl px-6 py-16">
+      <div className="mx-auto max-w-4xl px-6 py-20">
         {/* HERO */}
         <section className="space-y-5">
           <div className="inline-flex items-center gap-2 rounded-full border border-zinc-800 bg-zinc-900/40 px-4 py-2 text-sm text-zinc-200">
-            <span className="h-2 w-2 rounded-full bg-emerald-400" />
+            <span className="h-2 w-2 rounded-full bg-zinc-400" />
             Görüşmeye hazır • Junior Web / Yazılım Adayı
           </div>
 
@@ -235,7 +239,7 @@ export default function Page() {
                     <div className="mt-4 flex flex-wrap gap-3 text-sm">
   {p.live && (
     <a
-      className="underline text-zinc-200"
+      className="underline text-zinc-200 transition hover:text-zinc-50"
       href={p.live}
       target="_blank"
       rel="noreferrer"
@@ -245,7 +249,7 @@ export default function Page() {
   )}
   {p.repo && (
     <a
-      className="underline text-zinc-200"
+      className="underline text-zinc-200 transition hover:text-zinc-50"
       href={p.repo}
       target="_blank"
       rel="noreferrer"
