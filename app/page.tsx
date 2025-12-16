@@ -3,7 +3,7 @@ const links = {
   phone: "+90 545 286 50 78",
   github: "https://github.com/erdogndmn",
   linkedin: "https://www.linkedin.com/in/halit-erdogan-duman/",
-  cv: "/cv.pdf",
+  cv: "/cv-2025.pdf",
 };
 
 const skills = [
@@ -81,17 +81,20 @@ function Card({
     <div className="group rounded-2xl border border-zinc-800 bg-zinc-900/30 p-6 shadow-[0_0_0_1px_rgba(255,255,255,0.02)] transition hover:-translate-y-0.5 hover:border-zinc-700 hover:bg-zinc-900/50">
       <div className="flex items-start justify-between gap-4">
         <div>
-          <<h3 className="text-lg font-semibold tracking-tight flex items-center gap-3">
-  <span className="h-px w-6 bg-zinc-700" />
-  {title}
-</h3>
+          {/* HATA BURADAYDI: <<h3 -> <h3 */}
+          <h3 className="flex items-center gap-3 text-lg font-semibold tracking-tight">
+            <span className="h-px w-6 bg-zinc-700" />
+            {title}
+          </h3>
 
           {subtitle ? (
             <p className="mt-1 text-sm text-zinc-400">{subtitle}</p>
           ) : null}
         </div>
+
         <div className="h-10 w-10 rounded-2xl bg-gradient-to-br from-zinc-800 to-zinc-900 ring-1 ring-white/5 transition group-hover:scale-[1.03]" />
       </div>
+
       <div className="mt-4 text-zinc-300">{children}</div>
     </div>
   );
@@ -133,6 +136,7 @@ export default function Page() {
             >
               CV’yi Aç (PDF)
             </a>
+
             <a
               href={links.github}
               target="_blank"
@@ -141,6 +145,7 @@ export default function Page() {
             >
               GitHub
             </a>
+
             <a
               href={links.linkedin}
               target="_blank"
@@ -193,14 +198,13 @@ export default function Page() {
                   >
                     <div className="flex items-start justify-between gap-3">
                       <div>
-                        <p className="font-semibold text-zinc-100">
-                          {e.role}
-                        </p>
+                        <p className="font-semibold text-zinc-100">{e.role}</p>
                         <p className="text-sm text-zinc-400">
                           {e.company} • {e.date}
                         </p>
                       </div>
                     </div>
+
                     <ul className="mt-3 list-disc space-y-1 pl-5 text-sm text-zinc-300">
                       {e.bullets.map((b) => (
                         <li key={b}>{b}</li>
@@ -221,6 +225,7 @@ export default function Page() {
                     className="rounded-2xl border border-zinc-800 bg-zinc-950/40 p-5 transition hover:border-zinc-700"
                   >
                     <p className="font-semibold text-zinc-100">{p.title}</p>
+
                     <p className="mt-2 text-sm leading-relaxed text-zinc-300">
                       {p.description}
                     </p>
@@ -237,28 +242,27 @@ export default function Page() {
                     </div>
 
                     <div className="mt-4 flex flex-wrap gap-3 text-sm">
-  {p.live && (
-    <a
-      className="underline text-zinc-200 transition hover:text-zinc-50"
-      href={p.live}
-      target="_blank"
-      rel="noreferrer"
-    >
-      Live
-    </a>
-  )}
-  {p.repo && (
-    <a
-      className="underline text-zinc-200 transition hover:text-zinc-50"
-      href={p.repo}
-      target="_blank"
-      rel="noreferrer"
-    >
-      GitHub
-    </a>
-  )}
-</div>
-
+                      {p.live && (
+                        <a
+                          className="underline text-zinc-200 transition hover:text-zinc-50"
+                          href={p.live}
+                          target="_blank"
+                          rel="noreferrer"
+                        >
+                          Live
+                        </a>
+                      )}
+                      {p.repo && (
+                        <a
+                          className="underline text-zinc-200 transition hover:text-zinc-50"
+                          href={p.repo}
+                          target="_blank"
+                          rel="noreferrer"
+                        >
+                          GitHub
+                        </a>
+                      )}
+                    </div>
                   </div>
                 ))}
               </div>
