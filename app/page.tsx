@@ -26,10 +26,10 @@ const content = {
     ctaTertiary: "GitHub",
 
     quick: {
-      location: "📍 İstanbul / Kartal",
-      openTo: "🎯 Junior rol / staj / proje bazlı çalışmaya açık",
-      phone: "📞 +90 545 286 50 78",
-      mail: "✉️ erdogand159@gmail.com",
+      location: " İstanbul / Kartal",
+      openTo: " Junior rol / staj / proje bazlı çalışmaya açık",
+      phone: " +90 545 286 50 78",
+      mail: " erdogand159@gmail.com",
     },
 
     sections: {
@@ -118,7 +118,8 @@ const content = {
           "HTML ile geliştirilmiş, responsive (mobil uyumlu) tek sayfalık tanıtım sitesi. Kişisel bilgiler, bağlantılar ve projelerin yer aldığı düzenli bölümler. SEO dostu yapı ve sade kullanıcı deneyimi.",
         stack: ["HTML", "CSS"],
         live: "",
-        repo: "",
+        repo: "https://github.com/erdogndmn/my-portfolio",
+
       },
       {
         title: "Bu Portfolyo (Next.js)",
@@ -158,7 +159,7 @@ const content = {
     badge: "Junior Web & Digital Solutions Developer",
     name: "Halit Erdoğan Duman",
     titleLine:
-      "HTML/CSS • Python (basic) • Git/GitHub • Google Ads campaign support • Operational ownership",
+  "Junior Web Developer • HTML/CSS • Basic Python • Git/GitHub • Google Ads Support",
     heroDesc:
       "I am a solution-oriented Computer Programming student with strong communication skills and a fast learning mindset. I strengthened my technical skills in HTML, basic Python, and digital marketing through hands-on field experience. I took responsibility in both technical and operational areas by working in web content management, Google Ads campaign support, and store operations.",
 
@@ -167,10 +168,10 @@ const content = {
     ctaTertiary: "GitHub",
 
     quick: {
-      location: "📍 Istanbul / Kartal",
-      openTo: "🎯 Open to junior roles / internships / projects",
-      phone: "📞 +90 545 286 50 78",
-      mail: "✉️ erdogand159@gmail.com",
+      location: " Istanbul / Kartal",
+      openTo: " Open to junior roles / internships / projects",
+      phone: " +90 545 286 50 78",
+      mail: " erdogand159@gmail.com",
     },
 
     sections: {
@@ -325,7 +326,6 @@ function Card({
             <p className="mt-1 text-sm text-zinc-400">{subtitle}</p>
           ) : null}
         </div>
-        <div className="h-10 w-10 rounded-2xl bg-gradient-to-br from-zinc-800 to-zinc-900 ring-1 ring-white/5 transition group-hover:scale-[1.03]" />
       </div>
       <div className="mt-4 text-zinc-300">{children}</div>
     </div>
@@ -600,9 +600,10 @@ export default function Page() {
           </div>
         </section>
 
-        <footer className="mt-16 text-sm text-zinc-500">
-          © {new Date().getFullYear()} {c.name}
-        </footer>
+       <footer className="mt-16 text-sm text-zinc-500">
+  © {new Date().getFullYear()} {c.name} — Built with Next.js & Tailwind CSS
+</footer>
+
       </div>
     </main>
   );
