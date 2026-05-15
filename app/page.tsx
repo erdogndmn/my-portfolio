@@ -1,4 +1,5 @@
 "use client";
+
 import React from "react";
 
 type Lang = "tr" | "en";
@@ -14,50 +15,58 @@ const links = {
 
 const content = {
   tr: {
-    badge: "Junior Web & Dijital Çözümler Geliştirici",
+    badge: "Junior Web Developer",
     name: "Halit Erdoğan Duman",
     titleLine:
-      "HTML/CSS • Python (temel) • Git/GitHub • Google Ads kampanya desteği • Operasyon sorumluluğu",
+      "Frontend Development • JavaScript Learning • WordPress • Git/GitHub",
     heroDesc:
-      "Çözüm odaklı, hızlı öğrenen ve güçlü iletişim becerilerine sahip bir bilgisayar programcılığı öğrencisiyim. HTML, temel Python ve dijital pazarlama alanlarında edindiğim teknik yetkinliklerimi saha deneyimiyle pekiştirdim. Web içerik yönetimi, Google Ads kampanya desteği ve mağaza operasyonlarında görev alarak hem teknik hem operasyonel alanlarda sorumluluk üstlendim.",
+      "Bilgisayar programcılığı alanında kendini geliştiren, frontend teknolojileri ve modern web geliştirme üzerine yoğunlaşan junior developer adayıyım.",
 
-    ctaPrimary: "CV’yi İndir (PDF)",
+    ctaPrimary: "CV’yi İndir",
     ctaSecondary: "LinkedIn",
     ctaTertiary: "GitHub",
 
     quick: {
-      location: " İstanbul / Kartal",
-      openTo: " Junior rol / staj / proje bazlı çalışmaya açık",
-      phone: " +90 545 286 50 78",
-      mail: " erdogand159@gmail.com",
+      location: "İstanbul / Kartal",
+      openTo: "Junior web rolleri, staj ve proje bazlı çalışmaya açık",
+      phone: "+90 545 286 50 78",
+      mail: "erdogand159@gmail.com",
     },
 
     sections: {
-      about: { title: "Profesyonel Profil", subtitle: "Kısa özet" },
-      experience: { title: "İş Deneyimi", subtitle: "Rol ve sorumluluklar" },
-      skills: { title: "Teknik Beceriler", subtitle: "Gruplu yetkinlikler" },
-      projects: { title: "Projeler", subtitle: "Mini projeler + portföy" },
+      about: { title: "Hakkımda", subtitle: "Kısa profil" },
+      experience: { title: "İş Deneyimi", subtitle: "Deneyimlerim" },
+      skills: { title: "Teknik Yetenekler", subtitle: "Odaklandığım alanlar" },
+      projects: { title: "Projeler", subtitle: "Portföy ve gelişim projeleri" },
       education: { title: "Eğitim", subtitle: "Akademik geçmiş" },
-      language: { title: "Yabancı Dil", subtitle: "Seviye" },
-      contact: { title: "İletişim", subtitle: "Bağlantılar" },
+      language: { title: "Yabancı Dil", subtitle: "İngilizce seviyesi" },
+      contact: { title: "İletişim", subtitle: "Bana ulaşın" },
     },
 
     aboutText:
-      "Takım içinde uyumlu çalışır, gerektiğinde sorumluluk alarak liderlik ederim. Farklı sektörlerde edindiğim kısa süreli deneyimler, çok yönlü bir bakış açısı ve geniş bir beceri yelpazesi kazanmamı sağladı. Hedefim; teknolojiyi, insan ilişkilerini ve pratik çözümleri bir araya getirerek değer üreten projelerde yer almak.",
+      "WordPress kurulumu, web sitesi düzenleme, içerik yönetimi ve temel frontend geliştirme konularında deneyim sahibiyim. Teknik sistemleri anlamayı, problem çözmeyi ve çalışan yapılar geliştirmeyi seviyorum. Şu anda JavaScript, React ve modern web teknolojileri üzerine yoğunlaşarak teknik becerilerimi geliştirmeye devam ediyorum.",
 
     experience: [
+      {
+        role: "Satış Danışmanı",
+        company: "Migros",
+        date: "2026 – Devam Ediyor",
+        bullets: [
+          "Müşteri ilişkileri ve mağaza operasyon süreçlerinde görev alma",
+          "Ürün yerleşimi, stok düzeni ve mağaza akışının yönetimi",
+          "Kasiyer süreçleri ve ödeme sistemleri kullanımı",
+          "Yoğun tempoda hızlı problem çözme ve operasyon desteği",
+        ],
+      },
       {
         role: "Mağaza Sorumlusu & Kasiyer",
         company: "Ziyafe Kayseri Mutfağı — Maltepe Park AVM",
         date: "12/2025 – 01/2026",
         bullets: [
-          "POS, nakit ve dijital ödeme sistemlerinin yönetimi",
-          "Günlük kasa işlemleri, Z raporu ve satış verilerinin kontrolü",
-          "6 kişilik mağaza ekibinin vardiya planlaması, görev dağılımı ve koordinasyonu",
-          "Yoğun saatlerde operasyonel akışın kesintisiz sürdürülmesi",
-          "Stok takibi, tedarikçi siparişlerinin verilmesi ve depo yönetimi",
-          "Gıda hizmetleri mevzuatına uygunluk, hijyen ve iş güvenliği süreçleri",
-          "Franchise sahibi bulunmadığında mağazanın tüm operasyonel sorumluluğunun üstlenilmesi",
+          "POS, nakit ve dijital ödeme sistemlerinin kullanımı",
+          "Günlük kasa işlemleri, satış verileri ve stok takibi",
+          "Ekip koordinasyonu ve vardiya süreçlerine destek",
+          "Yoğun müşteri trafiğinde operasyonel akışın sürdürülmesi",
         ],
       },
       {
@@ -66,12 +75,10 @@ const content = {
         date: "08/2025 – 10/2025",
         bullets: [
           "Web sitesi içerik ve görsel düzenlemeleri",
-          "Google Ads kampanyalarında aktif görev: anahtar kelime analizi ve seçimi",
+          "WordPress tabanlı içerik güncellemeleri",
+          "Google Ads kampanyalarında operasyon desteği",
           "SEO uyumlu içerik düzenlemeleri",
-          "Reklam başlığı ve metni hazırlama",
-          "Bütçe planlaması ve hedef konum ayarlarına destek",
-          "Arama sonuçları performans analizleri",
-          "CorelDRAW, Illustrator ve AutoCAD ile görsel tasarımlar",
+          "CorelDRAW, Illustrator ve AutoCAD ile görsel çalışmalar",
         ],
       },
       {
@@ -79,54 +86,66 @@ const content = {
         company: "Karakaş Medya",
         date: "11/2024 – 12/2024",
         bullets: [
-          "Soğuk aramalar yoluyla potansiyel müşterilere ulaşarak dijital ajans hizmetlerinin tanıtımını gerçekleştirme",
-          "Hizmet tanıtımı sırasında karşılaştırmalı piyasa analizi, değer odaklı yaklaşım ve müşteri hizmetleri avantajlarını vurgulama",
-          "SEO danışmanlığı, sosyal medya yönetimi, portföy oluşturma ve fiyatlandırma gibi hizmetlerin ihtiyaç analizine göre sunumu",
-          "Randevu alarak yüz yüze görüşmeler organize etme ve satış kapama süreçlerinde aktif rol alma",
-          "Çat kapı saha ziyaretleri, yerinde tanıtım ve teklif sunumu",
-          "Ajansın sunduğu video çekimi ve kreatif hizmetlere dair projelerde operasyonel destek",
+          "Dijital ajans hizmetlerinin potansiyel müşterilere tanıtılması",
+          "SEO, sosyal medya ve web hizmetleri hakkında müşteri bilgilendirmesi",
+          "Randevu, teklif ve müşteri iletişim süreçlerinin takibi",
+          "Video çekimi ve kreatif hizmet projelerinde operasyonel destek",
         ],
       },
     ],
 
     skills: {
       web: [
-        "HTML5, Temel CSS",
-        "Python (veri işleme, temel otomasyon, mantıksal algoritmalar)",
-        "Git & GitHub kullanımı",
-        "Responsive tasarım mantığına aşinalık",
-        "Temel SEO uyumlu içerik yapısı oluşturma",
+        "HTML5",
+        "CSS3",
+        "JavaScript",
+        "React öğrenme süreci",
+        "Next.js",
+        "TypeScript temel bilgisi",
+        "Responsive Design",
+        "WordPress",
       ],
-      marketing: [
-        "Google Ads (kampanya oluşturma, anahtar kelime planlaması, bütçe yönetimi)",
-        "Temel dijital kampanya analizi & raporlama",
-        "Web içerik yönetimi (statik siteler, düzenlemeler)",
-        "SEO temelleri ve içerik eşleştirme",
+      technical: [
+        "Git",
+        "GitHub",
+        "Teknik problem çözme",
+        "Config / ini dosyası düzenleme",
+        "Minecraft server yapılandırma",
+        "Temel bilgisayar donanımı bilgisi",
       ],
       tools: [
-        "CorelDRAW (vektörel çizim, baskı hazırlığı)",
-        "Adobe Illustrator (logo & grafik çalışmaları)",
-        "AutoCAD (temel teknik çizim bilgisi)",
-        "Microsoft Word, Excel, PowerPoint (orta seviye)",
+        "Microsoft Excel",
+        "Microsoft Word",
+        "Microsoft PowerPoint",
+        "CorelDRAW",
+        "Adobe Illustrator",
+        "AutoCAD temel bilgisi",
       ],
     },
 
     projects: [
       {
-        title: "Kişisel Portföy Web Sitesi",
+        title: "Personal Portfolio Website",
         description:
-          "HTML ile geliştirilmiş, responsive (mobil uyumlu) tek sayfalık tanıtım sitesi. Kişisel bilgiler, bağlantılar ve projelerin yer aldığı düzenli bölümler. SEO dostu yapı ve sade kullanıcı deneyimi.",
-        stack: ["HTML", "CSS"],
-        live: "",
+          "Kişisel bilgileri, bağlantıları, teknik yetenekleri ve projeleri tek sayfada sunan responsive portföy sitesi.",
+        stack: ["Next.js", "TypeScript", "Tailwind CSS"],
+        live: links.portfolio,
         repo: "https://github.com/erdogndmn/my-portfolio",
-
       },
       {
-        title: "Bu Portfolyo (Next.js)",
+        title: "WordPress Website Edits",
         description:
-          "CV, bağlantılar ve projeleri tek sayfada toplayan hızlı ve mobil uyumlu portföy. Basit tasarım dili ve okunabilir içerik yapısı.",
-        stack: ["Next.js", "TypeScript", "Tailwind"],
-        live: links.portfolio,
+          "Web sitesi içerik düzenleme, görsel güncelleme ve temel sayfa yönetimi deneyimlerini kapsayan WordPress çalışmaları.",
+        stack: ["WordPress", "SEO", "Content Management"],
+        live: "",
+        repo: "",
+      },
+      {
+        title: "Learning Projects",
+        description:
+          "JavaScript, React ve frontend geliştirme üzerine geliştirmekte olduğum küçük pratik projeler ve denemeler.",
+        stack: ["JavaScript", "React", "Frontend"],
+        live: "",
         repo: links.github,
       },
     ],
@@ -147,59 +166,67 @@ const content = {
     ],
 
     languageText:
-      "İngilizce: B2–C1 (Teknik belgeleri anlayabilir, temel yazışmaları sürdürebilir, günlük konuşmaları takip edebilir düzeyde)",
+      "İngilizce: Teknik dokümanları ve eğitim içeriklerini takip edebilecek, günlük ve iş odaklı iletişim kurabilecek düzeyde.",
 
     contactText:
-      "Junior roller, staj ve proje bazlı işler için iletişime açığım. E-posta veya LinkedIn üzerinden ulaşabilirsin.",
+      "Junior web developer, frontend, WordPress ve teknik destek odaklı roller için iletişime açığım.",
 
     toggleLabel: "EN",
   },
 
   en: {
-    badge: "Junior Web & Digital Solutions Developer",
+    badge: "Junior Web Developer",
     name: "Halit Erdoğan Duman",
     titleLine:
-  "Junior Web Developer • HTML/CSS • Basic Python • Git/GitHub • Google Ads Support",
+      "Frontend Development • JavaScript Learning • WordPress • Git/GitHub",
     heroDesc:
-      "I am a solution-oriented Computer Programming student with strong communication skills and a fast learning mindset. I strengthened my technical skills in HTML, basic Python, and digital marketing through hands-on field experience. I took responsibility in both technical and operational areas by working in web content management, Google Ads campaign support, and store operations.",
+      "A Computer Programming student focused on frontend technologies and modern web development, aiming to grow as a junior web developer.",
 
-    ctaPrimary: "Download CV (PDF)",
+    ctaPrimary: "Download CV",
     ctaSecondary: "LinkedIn",
     ctaTertiary: "GitHub",
 
     quick: {
-      location: " Istanbul / Kartal",
-      openTo: " Open to junior roles / internships / projects",
-      phone: " +90 545 286 50 78",
-      mail: " erdogand159@gmail.com",
+      location: "Istanbul / Kartal",
+      openTo: "Open to junior web roles, internships and project-based work",
+      phone: "+90 545 286 50 78",
+      mail: "erdogand159@gmail.com",
     },
 
     sections: {
-      about: { title: "Professional Summary", subtitle: "Quick overview" },
-      experience: { title: "Experience", subtitle: "Roles & responsibilities" },
-      skills: { title: "Technical Skills", subtitle: "Grouped capabilities" },
-      projects: { title: "Projects", subtitle: "Mini projects + portfolio" },
+      about: { title: "About", subtitle: "Short profile" },
+      experience: { title: "Experience", subtitle: "Work background" },
+      skills: { title: "Technical Skills", subtitle: "Main focus areas" },
+      projects: { title: "Projects", subtitle: "Portfolio and learning projects" },
       education: { title: "Education", subtitle: "Academic background" },
-      language: { title: "Language", subtitle: "Level" },
-      contact: { title: "Contact", subtitle: "Links" },
+      language: { title: "Language", subtitle: "English level" },
+      contact: { title: "Contact", subtitle: "Get in touch" },
     },
 
     aboutText:
-      "I work well within teams and take initiative when needed. My short-term experiences across different industries helped me build a versatile perspective and a broad skill set. My goal is to contribute to value-driven projects by combining technology, people skills, and practical solutions.",
+      "I have experience with WordPress setup, website editing, content management and basic frontend development. I enjoy understanding technical systems, solving problems and building working structures. I am currently improving my JavaScript, React and modern web development skills.",
 
     experience: [
       {
+        role: "Sales Assistant",
+        company: "Migros",
+        date: "2026 – Present",
+        bullets: [
+          "Supporting customer relations and store operations",
+          "Managing product placement, stock order and store flow",
+          "Using cashier systems and payment processes",
+          "Providing fast problem-solving support in a busy work environment",
+        ],
+      },
+      {
         role: "Store Supervisor & Cashier",
-        company: "Ziyafe Kayseri Mutfağı — Maltepe Park Shopping Center",
+        company: "Ziyafe Kayseri Mutfağı — Maltepe Park AVM",
         date: "12/2025 – 01/2026",
         bullets: [
-          "Management of POS, cash, and digital payment systems",
-          "Daily cash handling, Z-reports, and sales data checks",
-          "Shift planning and coordination for a 6-person store team",
-          "Ensuring uninterrupted operational flow during peak hours",
-          "Stock tracking, supplier orders, and inventory management",
-          "Compliance with food service regulations, hygiene, and workplace safety",
-          "Full operational responsibility in the absence of the franchise owner",
+          "Using POS, cash and digital payment systems",
+          "Tracking daily cash operations, sales data and stock",
+          "Supporting team coordination and shift processes",
+          "Maintaining operational flow during peak customer traffic",
         ],
       },
       {
@@ -207,13 +234,11 @@ const content = {
         company: "Multi Reklam",
         date: "08/2025 – 10/2025",
         bullets: [
-          "Website content and visual edits",
-          "Active role in Google Ads campaigns: keyword research and selection",
-          "SEO-friendly content optimization",
-          "Ad headline and copy preparation",
-          "Support in budget planning and location targeting",
-          "Basic performance analysis of search campaign results",
-          "Visual designs using CorelDRAW, Illustrator, and AutoCAD",
+          "Website content and visual updates",
+          "WordPress-based content edits",
+          "Operational support in Google Ads campaigns",
+          "SEO-friendly content editing",
+          "Visual works with CorelDRAW, Illustrator and AutoCAD",
         ],
       },
       {
@@ -221,11 +246,9 @@ const content = {
         company: "Karakaş Medya",
         date: "11/2024 – 12/2024",
         bullets: [
-          "Reaching potential clients through cold calling and presenting digital agency services",
-          "Highlighting market comparisons, value-driven approach, and customer service advantages during service presentations",
-          "Offering services such as SEO consulting, social media management, portfolio building, and pricing based on needs analysis",
-          "Scheduling face-to-face meetings and actively supporting sales closing processes",
-          "On-site visits and proposal presentations",
+          "Presenting digital agency services to potential clients",
+          "Informing clients about SEO, social media and web services",
+          "Following appointment, offer and customer communication processes",
           "Operational support in video production and creative service projects",
         ],
       },
@@ -233,41 +256,56 @@ const content = {
 
     skills: {
       web: [
-        "HTML5, Basic CSS",
-        "Python (data handling, basic automation, logical thinking)",
-        "Git & GitHub",
-        "Responsive design fundamentals",
-        "SEO-friendly content structure basics",
+        "HTML5",
+        "CSS3",
+        "JavaScript",
+        "Learning React",
+        "Next.js",
+        "Basic TypeScript",
+        "Responsive Design",
+        "WordPress",
       ],
-      marketing: [
-        "Google Ads (campaign support, keyword planning, budget management)",
-        "Basic campaign analysis & reporting",
-        "Website content management",
-        "SEO fundamentals and content mapping",
+      technical: [
+        "Git",
+        "GitHub",
+        "Technical problem solving",
+        "Config / ini file editing",
+        "Minecraft server configuration",
+        "Basic computer hardware knowledge",
       ],
       tools: [
-        "CorelDRAW (vector & print preparation)",
-        "Adobe Illustrator (logo & graphics)",
-        "AutoCAD (basic)",
-        "Microsoft Word, Excel, PowerPoint (intermediate)",
+        "Microsoft Excel",
+        "Microsoft Word",
+        "Microsoft PowerPoint",
+        "CorelDRAW",
+        "Adobe Illustrator",
+        "Basic AutoCAD",
       ],
     },
 
     projects: [
       {
-        title: "Personal Landing Website",
+        title: "Personal Portfolio Website",
         description:
-          "A responsive, single-page personal introduction website built with HTML/CSS. Includes personal info, links, and project sections. SEO-friendly structure and a clean user experience.",
-        stack: ["HTML", "CSS"],
+          "A responsive portfolio website that presents personal information, links, technical skills and projects on a single page.",
+        stack: ["Next.js", "TypeScript", "Tailwind CSS"],
+        live: links.portfolio,
+        repo: "https://github.com/erdogndmn/my-portfolio",
+      },
+      {
+        title: "WordPress Website Edits",
+        description:
+          "WordPress experience including website content editing, visual updates and basic page management.",
+        stack: ["WordPress", "SEO", "Content Management"],
         live: "",
         repo: "",
       },
       {
-        title: "This Portfolio (Next.js)",
+        title: "Learning Projects",
         description:
-          "A fast, mobile-friendly portfolio that brings my CV, links, and projects into a single page with a clean and readable content structure.",
-        stack: ["Next.js", "TypeScript", "Tailwind"],
-        live: links.portfolio,
+          "Small practice projects and experiments focused on JavaScript, React and frontend development.",
+        stack: ["JavaScript", "React", "Frontend"],
+        live: "",
         repo: links.github,
       },
     ],
@@ -288,10 +326,10 @@ const content = {
     ],
 
     languageText:
-      "English: B2–C1 (Able to understand technical documents, handle basic written communication, and follow everyday conversations.)",
+      "English: Able to follow technical documents and educational content, and communicate in daily and work-related contexts.",
 
     contactText:
-      "Open to junior roles, internships, and project-based work. Feel free to reach out via email or LinkedIn.",
+      "Open to junior web developer, frontend, WordPress and technical support focused roles.",
 
     toggleLabel: "TR",
   },
@@ -316,16 +354,12 @@ function Card({
 }) {
   return (
     <div className="group rounded-2xl border border-zinc-800 bg-zinc-900/30 p-6 shadow-[0_0_0_1px_rgba(255,255,255,0.02)] transition hover:-translate-y-0.5 hover:border-zinc-700 hover:bg-zinc-900/50">
-      <div className="flex items-start justify-between gap-4">
-        <div>
-          <h2 className="flex items-center gap-3 text-lg font-semibold tracking-tight">
-            <span className="h-px w-6 bg-zinc-700" />
-            {title}
-          </h2>
-          {subtitle ? (
-            <p className="mt-1 text-sm text-zinc-400">{subtitle}</p>
-          ) : null}
-        </div>
+      <div>
+        <h2 className="flex items-center gap-3 text-lg font-semibold tracking-tight">
+          <span className="h-px w-6 bg-zinc-700" />
+          {title}
+        </h2>
+        {subtitle ? <p className="mt-1 text-sm text-zinc-400">{subtitle}</p> : null}
       </div>
       <div className="mt-4 text-zinc-300">{children}</div>
     </div>
@@ -333,9 +367,7 @@ function Card({
 }
 
 function SectionTitle({ children }: { children: React.ReactNode }) {
-  return (
-    <p className="mb-2 text-sm font-medium text-zinc-200">{children}</p>
-  );
+  return <p className="mb-2 text-sm font-medium text-zinc-200">{children}</p>;
 }
 
 export default function Page() {
@@ -344,17 +376,16 @@ export default function Page() {
 
   return (
     <main className="min-h-screen bg-zinc-950 text-zinc-50">
-      {/* glow */}
       <div className="pointer-events-none fixed inset-0 -z-10">
-        <div className="absolute left-1/2 top-[-220px] h-[520px] w-[920px] -translate-x-1/2 rounded-full bg-zinc-800/20 blur-3xl" />
+        <div className="absolute left-1/2 top-[-220px] h-[520px] w-[920px] -translate-x-1/2 rounded-full bg-blue-900/20 blur-3xl" />
+        <div className="absolute bottom-[-200px] right-[-100px] h-[420px] w-[420px] rounded-full bg-violet-900/10 blur-3xl" />
       </div>
 
-      <div className="mx-auto max-w-4xl px-6 py-20">
-        {/* HERO */}
+      <div className="mx-auto max-w-5xl px-6 py-16 sm:py-20">
         <section className="space-y-5">
           <div className="flex flex-wrap items-center gap-3">
             <div className="inline-flex items-center gap-2 rounded-full border border-zinc-800 bg-zinc-900/40 px-4 py-2 text-sm text-zinc-200">
-              <span className="h-2 w-2 rounded-full bg-zinc-400" />
+              <span className="h-2 w-2 rounded-full bg-emerald-400" />
               {c.badge}
             </div>
 
@@ -367,17 +398,18 @@ export default function Page() {
             </button>
           </div>
 
-          <h1 className="text-4xl font-semibold tracking-tight sm:text-5xl">
+          <h1 className="max-w-3xl text-4xl font-semibold tracking-tight sm:text-6xl">
             {c.name}
           </h1>
 
-          <p className="max-w-3xl text-sm text-zinc-300">{c.titleLine}</p>
+          <p className="max-w-3xl text-sm text-zinc-300 sm:text-base">
+            {c.titleLine}
+          </p>
 
           <p className="max-w-2xl text-lg leading-relaxed text-zinc-300">
             {c.heroDesc}
           </p>
 
-          {/* CTA */}
           <div className="flex flex-wrap gap-3">
             <a
               href={links.cv}
@@ -406,7 +438,6 @@ export default function Page() {
             </a>
           </div>
 
-          {/* quick info */}
           <div className="flex flex-wrap gap-2 pt-2">
             <Chip>{c.quick.location}</Chip>
             <Chip>{c.quick.openTo}</Chip>
@@ -415,19 +446,12 @@ export default function Page() {
           </div>
         </section>
 
-        {/* GRID */}
         <section className="mt-14 grid gap-6 md:grid-cols-2">
-          {/* About */}
           <Card title={c.sections.about.title} subtitle={c.sections.about.subtitle}>
-  <p className="leading-relaxed">{c.heroDesc}</p>
-  <p className="mt-3 leading-relaxed">{c.aboutText}</p>
-</Card>
+            <p className="leading-relaxed">{c.aboutText}</p>
+          </Card>
 
-          {/* Education */}
-          <Card
-            title={c.sections.education.title}
-            subtitle={c.sections.education.subtitle}
-          >
+          <Card title={c.sections.education.title} subtitle={c.sections.education.subtitle}>
             <ul className="space-y-2">
               {c.education.map((e) => (
                 <li key={e.school + e.program}>
@@ -438,49 +462,13 @@ export default function Page() {
             </ul>
           </Card>
 
-          {/* Experience */}
           <div className="md:col-span-2">
-            <Card
-              title={c.sections.experience.title}
-              subtitle={c.sections.experience.subtitle}
-            >
-              <div className="grid gap-4 md:grid-cols-2">
-                {c.experience.map((e) => (
-                  <div
-                    key={e.role + e.company}
-                    className="rounded-2xl border border-zinc-800 bg-zinc-950/40 p-5"
-                  >
-                    <div className="flex items-start justify-between gap-3">
-                      <div>
-                        <p className="font-semibold text-zinc-100">{e.role}</p>
-                        <p className="text-sm text-zinc-400">
-                          {e.company} • {e.date}
-                        </p>
-                      </div>
-                    </div>
-
-                    <ul className="mt-3 list-disc space-y-1 pl-5 text-sm text-zinc-300">
-                      {e.bullets.map((b) => (
-                        <li key={b}>{b}</li>
-                      ))}
-                    </ul>
-                  </div>
-                ))}
-              </div>
-            </Card>
-          </div>
-
-          {/* Projects */}
-          <div className="md:col-span-2">
-            <Card
-              title={c.sections.projects.title}
-              subtitle={c.sections.projects.subtitle}
-            >
-              <div className="grid gap-4 md:grid-cols-2">
+            <Card title={c.sections.projects.title} subtitle={c.sections.projects.subtitle}>
+              <div className="grid gap-4 md:grid-cols-3">
                 {c.projects.map((p) => (
                   <div
                     key={p.title}
-                    className="rounded-2xl border border-zinc-800 bg-zinc-950/40 p-5 transition hover:border-zinc-700"
+                    className="rounded-2xl border border-zinc-800 bg-zinc-950/40 p-5 transition hover:-translate-y-0.5 hover:border-zinc-700"
                   >
                     <p className="font-semibold text-zinc-100">{p.title}</p>
 
@@ -502,7 +490,7 @@ export default function Page() {
                     <div className="mt-4 flex flex-wrap gap-3 text-sm">
                       {p.live ? (
                         <a
-                          className="underline text-zinc-200 transition hover:text-zinc-50"
+                          className="text-zinc-200 underline transition hover:text-zinc-50"
                           href={p.live}
                           target="_blank"
                           rel="noreferrer"
@@ -512,7 +500,7 @@ export default function Page() {
                       ) : null}
                       {p.repo ? (
                         <a
-                          className="underline text-zinc-200 transition hover:text-zinc-50"
+                          className="text-zinc-200 underline transition hover:text-zinc-50"
                           href={p.repo}
                           target="_blank"
                           rel="noreferrer"
@@ -527,11 +515,10 @@ export default function Page() {
             </Card>
           </div>
 
-          {/* Skills */}
           <Card title={c.sections.skills.title} subtitle={c.sections.skills.subtitle}>
             <div className="space-y-4">
               <div>
-                <SectionTitle>Web & Programming</SectionTitle>
+                <SectionTitle>Web & Frontend</SectionTitle>
                 <div className="flex flex-wrap gap-2">
                   {c.skills.web.map((s) => (
                     <Chip key={s}>{s}</Chip>
@@ -540,16 +527,16 @@ export default function Page() {
               </div>
 
               <div>
-                <SectionTitle>Digital Marketing</SectionTitle>
+                <SectionTitle>Technical</SectionTitle>
                 <div className="flex flex-wrap gap-2">
-                  {c.skills.marketing.map((s) => (
+                  {c.skills.technical.map((s) => (
                     <Chip key={s}>{s}</Chip>
                   ))}
                 </div>
               </div>
 
               <div>
-                <SectionTitle>Design & Tools</SectionTitle>
+                <SectionTitle>Tools</SectionTitle>
                 <div className="flex flex-wrap gap-2">
                   {c.skills.tools.map((s) => (
                     <Chip key={s}>{s}</Chip>
@@ -559,15 +546,34 @@ export default function Page() {
             </div>
           </Card>
 
-          {/* Language */}
-          <Card
-            title={c.sections.language.title}
-            subtitle={c.sections.language.subtitle}
-          >
+          <Card title={c.sections.language.title} subtitle={c.sections.language.subtitle}>
             <p className="leading-relaxed">{c.languageText}</p>
           </Card>
 
-          {/* Contact */}
+          <div className="md:col-span-2">
+            <Card title={c.sections.experience.title} subtitle={c.sections.experience.subtitle}>
+              <div className="grid gap-4 md:grid-cols-2">
+                {c.experience.map((e) => (
+                  <div
+                    key={e.role + e.company}
+                    className="rounded-2xl border border-zinc-800 bg-zinc-950/40 p-5"
+                  >
+                    <p className="font-semibold text-zinc-100">{e.role}</p>
+                    <p className="text-sm text-zinc-400">
+                      {e.company} • {e.date}
+                    </p>
+
+                    <ul className="mt-3 list-disc space-y-1 pl-5 text-sm text-zinc-300">
+                      {e.bullets.map((b) => (
+                        <li key={b}>{b}</li>
+                      ))}
+                    </ul>
+                  </div>
+                ))}
+              </div>
+            </Card>
+          </div>
+
           <div className="md:col-span-2">
             <Card title={c.sections.contact.title} subtitle={c.sections.contact.subtitle}>
               <p className="leading-relaxed">{c.contactText}</p>
@@ -579,6 +585,7 @@ export default function Page() {
                 >
                   Email
                 </a>
+
                 <a
                   href={links.linkedin}
                   target="_blank"
@@ -587,6 +594,7 @@ export default function Page() {
                 >
                   LinkedIn
                 </a>
+
                 <a
                   href={links.github}
                   target="_blank"
@@ -600,10 +608,9 @@ export default function Page() {
           </div>
         </section>
 
-       <footer className="mt-16 text-sm text-zinc-500">
-  © {new Date().getFullYear()} {c.name} — Built with Next.js & Tailwind CSS
-</footer>
-
+        <footer className="mt-16 text-sm text-zinc-500">
+          © {new Date().getFullYear()} {c.name} — Built with Next.js & Tailwind CSS
+        </footer>
       </div>
     </main>
   );
