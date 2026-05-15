@@ -15,13 +15,13 @@ const links = {
 
 const content = {
   tr: {
+    nav: ["Hakkımda", "Projeler", "Yetenekler", "Deneyim", "İletişim"],
     badge: "Junior Web Developer",
     name: "Halit Erdoğan Duman",
     titleLine:
       "Frontend Development • JavaScript Learning • WordPress • Git/GitHub",
     heroDesc:
-      "Bilgisayar programcılığı alanında kendini geliştiren, frontend teknolojileri ve modern web geliştirme üzerine yoğunlaşan junior developer adayıyım.",
-
+      "Frontend teknolojileri ve modern web geliştirme üzerine kendini geliştiren, çalışan sistemler üretmeyi ve teknik problemler çözmeyi seven junior developer adayıyım.",
     ctaPrimary: "CV’yi İndir",
     ctaSecondary: "LinkedIn",
     ctaTertiary: "GitHub",
@@ -35,16 +35,81 @@ const content = {
 
     sections: {
       about: { title: "Hakkımda", subtitle: "Kısa profil" },
-      experience: { title: "İş Deneyimi", subtitle: "Deneyimlerim" },
-      skills: { title: "Teknik Yetenekler", subtitle: "Odaklandığım alanlar" },
       projects: { title: "Projeler", subtitle: "Portföy ve gelişim projeleri" },
+      learning: { title: "Şu An Öğreniyorum", subtitle: "Aktif gelişim alanlarım" },
+      skills: { title: "Teknik Yetenekler", subtitle: "Odaklandığım alanlar" },
+      experience: { title: "İş Deneyimi", subtitle: "Deneyimlerim" },
       education: { title: "Eğitim", subtitle: "Akademik geçmiş" },
       language: { title: "Yabancı Dil", subtitle: "İngilizce seviyesi" },
       contact: { title: "İletişim", subtitle: "Bana ulaşın" },
     },
 
     aboutText:
-      "WordPress kurulumu, web sitesi düzenleme, içerik yönetimi ve temel frontend geliştirme konularında deneyim sahibiyim. Teknik sistemleri anlamayı, problem çözmeyi ve çalışan yapılar geliştirmeyi seviyorum. Şu anda JavaScript, React ve modern web teknolojileri üzerine yoğunlaşarak teknik becerilerimi geliştirmeye devam ediyorum.",
+      "WordPress kurulumu, web sitesi düzenleme, içerik yönetimi ve temel frontend geliştirme konularında deneyim sahibiyim. Teknik sistemleri anlamayı, problem çözmeyi ve çalışan yapılar geliştirmeyi seviyorum. Şu anda JavaScript, React ve modern web teknolojileri üzerine yoğunlaşarak teknik becerilerimi geliştiriyorum.",
+
+    learning: [
+      "JavaScript temellerini güçlendirme",
+      "React component mantığı",
+      "Next.js ile modern web geliştirme",
+      "TypeScript temel kullanımı",
+      "GitHub üzerinde düzenli proje paylaşımı",
+    ],
+
+    projects: [
+      {
+        title: "Personal Portfolio Website",
+        description:
+          "Kişisel bilgileri, bağlantıları, teknik yetenekleri ve projeleri tek sayfada sunan responsive portföy sitesi.",
+        stack: ["Next.js", "TypeScript", "Tailwind CSS"],
+        live: links.portfolio,
+        repo: "https://github.com/erdogndmn/my-portfolio",
+      },
+      {
+        title: "WordPress Website Edits",
+        description:
+          "Web sitesi içerik düzenleme, görsel güncelleme ve temel sayfa yönetimi deneyimlerini kapsayan WordPress çalışmaları.",
+        stack: ["WordPress", "SEO", "Content Management"],
+        live: "",
+        repo: "",
+      },
+      {
+        title: "Learning Projects",
+        description:
+          "JavaScript, React ve frontend geliştirme üzerine geliştirmekte olduğum küçük pratik projeler ve denemeler.",
+        stack: ["JavaScript", "React", "Frontend"],
+        live: "",
+        repo: links.github,
+      },
+    ],
+
+    skills: {
+      web: [
+        "HTML5",
+        "CSS3",
+        "JavaScript",
+        "React öğrenme süreci",
+        "Next.js",
+        "TypeScript temel bilgisi",
+        "Responsive Design",
+        "WordPress",
+      ],
+      technical: [
+        "Git",
+        "GitHub",
+        "Teknik problem çözme",
+        "Config / ini dosyası düzenleme",
+        "Minecraft server yapılandırma",
+        "Temel bilgisayar donanımı bilgisi",
+      ],
+      tools: [
+        "Microsoft Excel",
+        "Microsoft Word",
+        "Microsoft PowerPoint",
+        "CorelDRAW",
+        "Adobe Illustrator",
+        "AutoCAD temel bilgisi",
+      ],
+    },
 
     experience: [
       {
@@ -89,64 +154,8 @@ const content = {
           "Dijital ajans hizmetlerinin potansiyel müşterilere tanıtılması",
           "SEO, sosyal medya ve web hizmetleri hakkında müşteri bilgilendirmesi",
           "Randevu, teklif ve müşteri iletişim süreçlerinin takibi",
-          "Video çekimi ve kreatif hizmet projelerinde operasyonel destek",
+          "Kreatif hizmet projelerinde operasyonel destek",
         ],
-      },
-    ],
-
-    skills: {
-      web: [
-        "HTML5",
-        "CSS3",
-        "JavaScript",
-        "React öğrenme süreci",
-        "Next.js",
-        "TypeScript temel bilgisi",
-        "Responsive Design",
-        "WordPress",
-      ],
-      technical: [
-        "Git",
-        "GitHub",
-        "Teknik problem çözme",
-        "Config / ini dosyası düzenleme",
-        "Minecraft server yapılandırma",
-        "Temel bilgisayar donanımı bilgisi",
-      ],
-      tools: [
-        "Microsoft Excel",
-        "Microsoft Word",
-        "Microsoft PowerPoint",
-        "CorelDRAW",
-        "Adobe Illustrator",
-        "AutoCAD temel bilgisi",
-      ],
-    },
-
-    projects: [
-      {
-        title: "Personal Portfolio Website",
-        description:
-          "Kişisel bilgileri, bağlantıları, teknik yetenekleri ve projeleri tek sayfada sunan responsive portföy sitesi.",
-        stack: ["Next.js", "TypeScript", "Tailwind CSS"],
-        live: links.portfolio,
-        repo: "https://github.com/erdogndmn/my-portfolio",
-      },
-      {
-        title: "WordPress Website Edits",
-        description:
-          "Web sitesi içerik düzenleme, görsel güncelleme ve temel sayfa yönetimi deneyimlerini kapsayan WordPress çalışmaları.",
-        stack: ["WordPress", "SEO", "Content Management"],
-        live: "",
-        repo: "",
-      },
-      {
-        title: "Learning Projects",
-        description:
-          "JavaScript, React ve frontend geliştirme üzerine geliştirmekte olduğum küçük pratik projeler ve denemeler.",
-        stack: ["JavaScript", "React", "Frontend"],
-        live: "",
-        repo: links.github,
       },
     ],
 
@@ -175,13 +184,13 @@ const content = {
   },
 
   en: {
+    nav: ["About", "Projects", "Skills", "Experience", "Contact"],
     badge: "Junior Web Developer",
     name: "Halit Erdoğan Duman",
     titleLine:
       "Frontend Development • JavaScript Learning • WordPress • Git/GitHub",
     heroDesc:
-      "A Computer Programming student focused on frontend technologies and modern web development, aiming to grow as a junior web developer.",
-
+      "A junior developer candidate focused on frontend technologies and modern web development, interested in building working systems and solving technical problems.",
     ctaPrimary: "Download CV",
     ctaSecondary: "LinkedIn",
     ctaTertiary: "GitHub",
@@ -195,9 +204,10 @@ const content = {
 
     sections: {
       about: { title: "About", subtitle: "Short profile" },
-      experience: { title: "Experience", subtitle: "Work background" },
-      skills: { title: "Technical Skills", subtitle: "Main focus areas" },
       projects: { title: "Projects", subtitle: "Portfolio and learning projects" },
+      learning: { title: "Currently Learning", subtitle: "Active growth areas" },
+      skills: { title: "Technical Skills", subtitle: "Main focus areas" },
+      experience: { title: "Experience", subtitle: "Work background" },
       education: { title: "Education", subtitle: "Academic background" },
       language: { title: "Language", subtitle: "English level" },
       contact: { title: "Contact", subtitle: "Get in touch" },
@@ -205,6 +215,70 @@ const content = {
 
     aboutText:
       "I have experience with WordPress setup, website editing, content management and basic frontend development. I enjoy understanding technical systems, solving problems and building working structures. I am currently improving my JavaScript, React and modern web development skills.",
+
+    learning: [
+      "Strengthening JavaScript fundamentals",
+      "React component logic",
+      "Modern web development with Next.js",
+      "Basic TypeScript usage",
+      "Publishing projects regularly on GitHub",
+    ],
+
+    projects: [
+      {
+        title: "Personal Portfolio Website",
+        description:
+          "A responsive portfolio website that presents personal information, links, technical skills and projects on a single page.",
+        stack: ["Next.js", "TypeScript", "Tailwind CSS"],
+        live: links.portfolio,
+        repo: "https://github.com/erdogndmn/my-portfolio",
+      },
+      {
+        title: "WordPress Website Edits",
+        description:
+          "WordPress experience including website content editing, visual updates and basic page management.",
+        stack: ["WordPress", "SEO", "Content Management"],
+        live: "",
+        repo: "",
+      },
+      {
+        title: "Learning Projects",
+        description:
+          "Small practice projects and experiments focused on JavaScript, React and frontend development.",
+        stack: ["JavaScript", "React", "Frontend"],
+        live: "",
+        repo: links.github,
+      },
+    ],
+
+    skills: {
+      web: [
+        "HTML5",
+        "CSS3",
+        "JavaScript",
+        "Learning React",
+        "Next.js",
+        "Basic TypeScript",
+        "Responsive Design",
+        "WordPress",
+      ],
+      technical: [
+        "Git",
+        "GitHub",
+        "Technical problem solving",
+        "Config / ini file editing",
+        "Minecraft server configuration",
+        "Basic computer hardware knowledge",
+      ],
+      tools: [
+        "Microsoft Excel",
+        "Microsoft Word",
+        "Microsoft PowerPoint",
+        "CorelDRAW",
+        "Adobe Illustrator",
+        "Basic AutoCAD",
+      ],
+    },
 
     experience: [
       {
@@ -249,64 +323,8 @@ const content = {
           "Presenting digital agency services to potential clients",
           "Informing clients about SEO, social media and web services",
           "Following appointment, offer and customer communication processes",
-          "Operational support in video production and creative service projects",
+          "Operational support in creative service projects",
         ],
-      },
-    ],
-
-    skills: {
-      web: [
-        "HTML5",
-        "CSS3",
-        "JavaScript",
-        "Learning React",
-        "Next.js",
-        "Basic TypeScript",
-        "Responsive Design",
-        "WordPress",
-      ],
-      technical: [
-        "Git",
-        "GitHub",
-        "Technical problem solving",
-        "Config / ini file editing",
-        "Minecraft server configuration",
-        "Basic computer hardware knowledge",
-      ],
-      tools: [
-        "Microsoft Excel",
-        "Microsoft Word",
-        "Microsoft PowerPoint",
-        "CorelDRAW",
-        "Adobe Illustrator",
-        "Basic AutoCAD",
-      ],
-    },
-
-    projects: [
-      {
-        title: "Personal Portfolio Website",
-        description:
-          "A responsive portfolio website that presents personal information, links, technical skills and projects on a single page.",
-        stack: ["Next.js", "TypeScript", "Tailwind CSS"],
-        live: links.portfolio,
-        repo: "https://github.com/erdogndmn/my-portfolio",
-      },
-      {
-        title: "WordPress Website Edits",
-        description:
-          "WordPress experience including website content editing, visual updates and basic page management.",
-        stack: ["WordPress", "SEO", "Content Management"],
-        live: "",
-        repo: "",
-      },
-      {
-        title: "Learning Projects",
-        description:
-          "Small practice projects and experiments focused on JavaScript, React and frontend development.",
-        stack: ["JavaScript", "React", "Frontend"],
-        live: "",
-        repo: links.github,
       },
     ],
 
@@ -335,6 +353,11 @@ const content = {
   },
 } as const;
 
+function scrollToSection(id: string) {
+  const el = document.getElementById(id);
+  el?.scrollIntoView({ behavior: "smooth", block: "start" });
+}
+
 function Chip({ children }: { children: React.ReactNode }) {
   return (
     <span className="rounded-full border border-zinc-800 bg-zinc-900/40 px-3 py-1 text-sm text-zinc-200">
@@ -344,16 +367,21 @@ function Chip({ children }: { children: React.ReactNode }) {
 }
 
 function Card({
+  id,
   title,
   subtitle,
   children,
 }: {
+  id?: string;
   title: string;
   subtitle?: string;
   children: React.ReactNode;
 }) {
   return (
-    <div className="group rounded-2xl border border-zinc-800 bg-zinc-900/30 p-6 shadow-[0_0_0_1px_rgba(255,255,255,0.02)] transition hover:-translate-y-0.5 hover:border-zinc-700 hover:bg-zinc-900/50">
+    <section
+      id={id}
+      className="scroll-mt-24 rounded-2xl border border-zinc-800 bg-zinc-900/30 p-6 shadow-[0_0_0_1px_rgba(255,255,255,0.02)] transition hover:-translate-y-0.5 hover:border-zinc-700 hover:bg-zinc-900/50"
+    >
       <div>
         <h2 className="flex items-center gap-3 text-lg font-semibold tracking-tight">
           <span className="h-px w-6 bg-zinc-700" />
@@ -362,7 +390,7 @@ function Card({
         {subtitle ? <p className="mt-1 text-sm text-zinc-400">{subtitle}</p> : null}
       </div>
       <div className="mt-4 text-zinc-300">{children}</div>
-    </div>
+    </section>
   );
 }
 
@@ -381,21 +409,48 @@ export default function Page() {
         <div className="absolute bottom-[-200px] right-[-100px] h-[420px] w-[420px] rounded-full bg-violet-900/10 blur-3xl" />
       </div>
 
-      <div className="mx-auto max-w-5xl px-6 py-16 sm:py-20">
-        <section className="space-y-5">
-          <div className="flex flex-wrap items-center gap-3">
-            <div className="inline-flex items-center gap-2 rounded-full border border-zinc-800 bg-zinc-900/40 px-4 py-2 text-sm text-zinc-200">
-              <span className="h-2 w-2 rounded-full bg-emerald-400" />
-              {c.badge}
-            </div>
+      <header className="sticky top-0 z-50 border-b border-zinc-900/80 bg-zinc-950/80 backdrop-blur">
+        <nav className="mx-auto flex max-w-5xl items-center justify-between px-6 py-4">
+          <button
+            onClick={() => scrollToSection("top")}
+            className="text-sm font-semibold tracking-tight text-zinc-100"
+          >
+            HED
+          </button>
 
-            <button
-              type="button"
-              onClick={() => setLang((p) => (p === "tr" ? "en" : "tr"))}
-              className="rounded-2xl border border-zinc-800 bg-zinc-900/30 px-4 py-2 text-sm font-medium text-zinc-100 transition hover:bg-zinc-900/60"
-            >
-              {c.toggleLabel}
-            </button>
+          <div className="hidden items-center gap-4 text-sm text-zinc-400 md:flex">
+            {[
+              ["about", c.nav[0]],
+              ["projects", c.nav[1]],
+              ["skills", c.nav[2]],
+              ["experience", c.nav[3]],
+              ["contact", c.nav[4]],
+            ].map(([id, label]) => (
+              <button
+                key={id}
+                onClick={() => scrollToSection(id)}
+                className="transition hover:text-zinc-100"
+              >
+                {label}
+              </button>
+            ))}
+          </div>
+
+          <button
+            type="button"
+            onClick={() => setLang((p) => (p === "tr" ? "en" : "tr"))}
+            className="rounded-2xl border border-zinc-800 bg-zinc-900/30 px-4 py-2 text-sm font-medium text-zinc-100 transition hover:bg-zinc-900/60"
+          >
+            {c.toggleLabel}
+          </button>
+        </nav>
+      </header>
+
+      <div id="top" className="mx-auto max-w-5xl px-6 py-16 sm:py-20">
+        <section className="space-y-5">
+          <div className="inline-flex items-center gap-2 rounded-full border border-zinc-800 bg-zinc-900/40 px-4 py-2 text-sm text-zinc-200">
+            <span className="h-2 w-2 rounded-full bg-emerald-400" />
+            {c.badge}
           </div>
 
           <h1 className="max-w-3xl text-4xl font-semibold tracking-tight sm:text-6xl">
@@ -447,7 +502,7 @@ export default function Page() {
         </section>
 
         <section className="mt-14 grid gap-6 md:grid-cols-2">
-          <Card title={c.sections.about.title} subtitle={c.sections.about.subtitle}>
+          <Card id="about" title={c.sections.about.title} subtitle={c.sections.about.subtitle}>
             <p className="leading-relaxed">{c.aboutText}</p>
           </Card>
 
@@ -463,7 +518,7 @@ export default function Page() {
           </Card>
 
           <div className="md:col-span-2">
-            <Card title={c.sections.projects.title} subtitle={c.sections.projects.subtitle}>
+            <Card id="projects" title={c.sections.projects.title} subtitle={c.sections.projects.subtitle}>
               <div className="grid gap-4 md:grid-cols-3">
                 {c.projects.map((p) => (
                   <div
@@ -515,7 +570,18 @@ export default function Page() {
             </Card>
           </div>
 
-          <Card title={c.sections.skills.title} subtitle={c.sections.skills.subtitle}>
+          <Card title={c.sections.learning.title} subtitle={c.sections.learning.subtitle}>
+            <ul className="space-y-2">
+              {c.learning.map((item) => (
+                <li key={item} className="flex gap-2 text-sm">
+                  <span className="mt-1.5 h-1.5 w-1.5 rounded-full bg-emerald-400" />
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
+          </Card>
+
+          <Card id="skills" title={c.sections.skills.title} subtitle={c.sections.skills.subtitle}>
             <div className="space-y-4">
               <div>
                 <SectionTitle>Web & Frontend</SectionTitle>
@@ -551,7 +617,7 @@ export default function Page() {
           </Card>
 
           <div className="md:col-span-2">
-            <Card title={c.sections.experience.title} subtitle={c.sections.experience.subtitle}>
+            <Card id="experience" title={c.sections.experience.title} subtitle={c.sections.experience.subtitle}>
               <div className="grid gap-4 md:grid-cols-2">
                 {c.experience.map((e) => (
                   <div
@@ -575,7 +641,7 @@ export default function Page() {
           </div>
 
           <div className="md:col-span-2">
-            <Card title={c.sections.contact.title} subtitle={c.sections.contact.subtitle}>
+            <Card id="contact" title={c.sections.contact.title} subtitle={c.sections.contact.subtitle}>
               <p className="leading-relaxed">{c.contactText}</p>
 
               <div className="mt-4 flex flex-wrap gap-3">
