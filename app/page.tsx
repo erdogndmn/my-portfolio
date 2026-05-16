@@ -249,6 +249,14 @@ const content = {
         live: "",
         repo: links.github,
       },
+      {
+  title: "Minecraft Server Config Generator",
+  description:
+    "Minecraft sunucuları için server.properties dosyası oluşturan interaktif web aracı. Form girdilerine göre config çıktısı üretir, kopyalama ve indirme özellikleri sunar.",
+  stack: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
+  live: "BURAYA_VERCEL_LINKİN",
+  repo: "https://github.com/erdogndmn/minecraft-server-config-generator",
+}
     ],
 
     skills: {
