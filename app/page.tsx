@@ -73,12 +73,12 @@ const content = {
         repo: "",
       },
       {
-        title: "Learning Projects",
-        description:
-          "JavaScript, React ve frontend geliştirme üzerine geliştirmekte olduğum küçük pratik projeler ve denemeler.",
-        stack: ["JavaScript", "React", "Frontend"],
-        live: "",
-        repo: links.github,
+         title: "Minecraft Server Config Generator",
+  description:
+    "Interactive web tool for generating customizable Minecraft server.properties configuration files based on user input.",
+  stack: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
+  live: "https://minecraft-server-config-generator.vercel.app",
+  repo: "https://github.com/erdogndmn/minecraft-server-config-generator",
       },
     ],
 
@@ -241,8 +241,14 @@ const content = {
         live: "",
         repo: "",
       },
-
-      
+      {
+  title: "Minecraft Server Config Generator",
+  description:
+    "Interactive web tool for generating customizable Minecraft server.properties configuration files based on user input.",
+  stack: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
+  live: "https://minecraft-server-config-generator.vercel.app",
+  repo: "https://github.com/erdogndmn/minecraft-server-config-generator",
+      },
     ],
 
     skills: {
