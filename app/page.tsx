@@ -73,12 +73,12 @@ const content = {
         repo: "",
       },
       {
-         title: "Minecraft Server Config Generator",
-  description:
-    "Interactive web tool for generating customizable Minecraft server.properties configuration files based on user input.",
-  stack: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
-  live: "https://minecraft-server-config-generator.vercel.app",
-  repo: "https://github.com/erdogndmn/minecraft-server-config-generator",
+      title: "Minecraft Server Config Generator",
+      description:
+       "Minecraft sunucuları için özelleştirilebilir server.properties dosyası oluşturan interaktif web aracı. Form girdilerine göre otomatik config çıktısı üretir.",
+      stack: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
+      live: "https://minecraft-server-config-generator.vercel.app",
+      repo: "https://github.com/erdogndmn/minecraft-server-config-generator",
       },
     ],
 
@@ -242,12 +242,12 @@ const content = {
         repo: "",
       },
       {
-  title: "Minecraft Server Config Generator",
-  description:
-    "Interactive web tool for generating customizable Minecraft server.properties configuration files based on user input.",
-  stack: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
-  live: "https://minecraft-server-config-generator.vercel.app",
-  repo: "https://github.com/erdogndmn/minecraft-server-config-generator",
+      title: "Minecraft Server Config Generator",
+      description:
+       "Interactive web tool for generating customizable Minecraft server.properties configuration files based on user input.",
+      stack: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
+      live: "https://minecraft-server-config-generator.vercel.app",
+      repo: "https://github.com/erdogndmn/minecraft-server-config-generator",
       },
     ],
 
