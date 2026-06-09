@@ -16,90 +16,93 @@ const links = {
 const content = {
   tr: {
     nav: ["Hakkımda", "Projeler", "Yetenekler", "Deneyim", "İletişim"],
-    badge: "Junior Web Developer",
+    badge: "Teknoloji ve Dijital Süreçler",
     name: "Halit Erdoğan Duman",
     titleLine:
-      "Frontend Development • JavaScript Learning • WordPress • Git/GitHub",
+      "Digital Operations • WordPress • Customer Relations • Web Technologies",
     heroDesc:
-      "Frontend teknolojileri ve modern web geliştirme üzerine kendini geliştiren, çalışan sistemler üretmeyi ve teknik problemler çözmeyi seven junior developer adayıyım.",
+      "Satış, müşteri ilişkileri, mağaza operasyonları, dijital içerik yönetimi ve temel web teknolojileri alanlarında deneyim sahibiyim. Yeni sistemleri hızlı öğrenen, çözüm odaklı ve teknolojiye yatkın bir aday olarak operasyonel ve teknik süreçlere katkı sağlamayı hedefliyorum.",
     ctaPrimary: "CV’yi İndir",
     ctaSecondary: "LinkedIn",
     ctaTertiary: "GitHub",
 
     quick: {
       location: "İstanbul / Kartal",
-      openTo: "Junior web rolleri, staj ve proje bazlı çalışmaya açık",
-      phone: "+90 545 286 50 78",
-      mail: "erdogand159@gmail.com",
+      openTo: "Operasyon, dijital süreçler, WordPress ve teknik destek rollerine açık",
+      phone: links.phone,
+      mail: links.mail,
     },
 
     sections: {
-      about: { title: "Hakkımda", subtitle: "Kısa profil" },
-      projects: { title: "Projeler", subtitle: "Portföy ve gelişim projeleri" },
-      learning: { title: "Şu An Öğreniyorum", subtitle: "Aktif gelişim alanlarım" },
-      skills: { title: "Teknik Yetenekler", subtitle: "Odaklandığım alanlar" },
-      experience: { title: "İş Deneyimi", subtitle: "Deneyimlerim" },
+      about: { title: "Hakkımda", subtitle: "Profesyonel profil" },
+      highlights: { title: "Öne Çıkanlar", subtitle: "Güçlü yönlerim" },
+      projects: { title: "Projeler", subtitle: "Dijital ve teknik çalışmalar" },
+      skills: { title: "Yetenekler", subtitle: "Teknik ve profesyonel beceriler" },
+      experience: { title: "İş Deneyimi", subtitle: "Çalışma geçmişim" },
       education: { title: "Eğitim", subtitle: "Akademik geçmiş" },
       language: { title: "Yabancı Dil", subtitle: "İngilizce seviyesi" },
       contact: { title: "İletişim", subtitle: "Bana ulaşın" },
     },
 
     aboutText:
-      "WordPress kurulumu, web sitesi düzenleme, içerik yönetimi ve temel frontend geliştirme konularında deneyim sahibiyim. Teknik sistemleri anlamayı, problem çözmeyi ve çalışan yapılar geliştirmeyi seviyorum. Şu anda JavaScript, React ve modern web teknolojileri üzerine yoğunlaşarak teknik becerilerimi geliştiriyorum.",
+      "Teknolojiye yatkın, hızlı öğrenen ve farklı sektörlerde çalışma deneyimi edinmiş bir adayım. Satış, müşteri ilişkileri, mağaza operasyonları, dijital içerik yönetimi ve temel web teknolojileri alanlarında deneyim sahibiyim. Yoğun çalışma ortamlarında sorumluluk alabilen, ekip çalışmasına uyumlu ve çözüm odaklı bir çalışma anlayışına sahibim.",
 
-    learning: [
-      "JavaScript temellerini güçlendirme",
-      "React component mantığı",
-      "Next.js ile modern web geliştirme",
-      "TypeScript temel kullanımı",
-      "GitHub üzerinde düzenli proje paylaşımı",
+    highlights: [
+      "Satış, müşteri ilişkileri ve mağaza operasyonları deneyimi",
+      "WordPress, içerik yönetimi ve temel SEO bilgisi",
+      "HTML, CSS, JavaScript, Git ve GitHub kullanımı",
+      "CorelDRAW, Adobe Illustrator ve temel AutoCAD bilgisi",
+      "Yoğun tempoda problem çözme ve ekip koordinasyonu",
+      "Yeni sistemlere ve teknik süreçlere hızlı adaptasyon",
     ],
 
     projects: [
       {
         title: "Personal Portfolio Website",
         description:
-          "Kişisel bilgileri, bağlantıları, teknik yetenekleri ve projeleri tek sayfada sunan responsive portföy sitesi.",
+          "Kişisel bilgileri, bağlantıları, yetenekleri ve projeleri tek sayfada sunan responsive portföy web sitesi.",
         stack: ["Next.js", "TypeScript", "Tailwind CSS"],
         live: links.portfolio,
         repo: "https://github.com/erdogndmn/my-portfolio",
       },
       {
-        title: "WordPress Website Edits",
+        title: "Digital Content & Website Management",
         description:
-          "Web sitesi içerik düzenleme, görsel güncelleme ve temel sayfa yönetimi deneyimlerini kapsayan WordPress çalışmaları.",
+          "WordPress tabanlı web sitelerinde içerik güncelleme, görsel düzenleme, sayfa yönetimi ve SEO uyumlu içerik düzenleme çalışmaları.",
         stack: ["WordPress", "SEO", "Content Management"],
         live: "",
         repo: "",
       },
       {
-      title: "Minecraft Server Config Generator",
-      description:
-       "Minecraft sunucuları için özelleştirilebilir server.properties dosyası oluşturan interaktif web aracı. Form girdilerine göre otomatik config çıktısı üretir.",
-      stack: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
-      live: "https://minecraft-server-config-generator.vercel.app",
-      repo: "https://github.com/erdogndmn/minecraft-server-config-generator",
+        title: "Minecraft Server Config Generator",
+        description:
+          "Minecraft sunucuları için özelleştirilebilir server.properties dosyası oluşturan interaktif web aracı.",
+        stack: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
+        live: "https://minecraft-server-config-generator.vercel.app",
+        repo: "https://github.com/erdogndmn/minecraft-server-config-generator",
       },
     ],
 
     skills: {
+      professional: [
+        "Müşteri İlişkileri",
+        "Satış Operasyonları",
+        "Stok ve Ürün Takibi",
+        "Problem Çözme",
+        "Takım Çalışması",
+        "Operasyonel Süreç Takibi",
+        "Hızlı Adaptasyon",
+      ],
       web: [
         "HTML5",
         "CSS3",
         "JavaScript",
-        "React öğrenme süreci",
+        "React",
         "Next.js",
-        "TypeScript temel bilgisi",
+        "TypeScript",
         "Responsive Design",
         "WordPress",
-      ],
-      technical: [
-        "Git",
-        "GitHub",
-        "Teknik problem çözme",
-        "Config / ini dosyası düzenleme",
-        "Minecraft server yapılandırma",
-        "Temel bilgisayar donanımı bilgisi",
+        "Temel SEO",
       ],
       tools: [
         "Microsoft Excel",
@@ -107,7 +110,9 @@ const content = {
         "Microsoft PowerPoint",
         "CorelDRAW",
         "Adobe Illustrator",
-        "AutoCAD temel bilgisi",
+        "AutoCAD Temel",
+        "Git",
+        "GitHub",
       ],
     },
 
@@ -115,23 +120,25 @@ const content = {
       {
         role: "Satış Danışmanı",
         company: "Migros",
-        date: "2026 – Devam Ediyor",
+        date: "01/2026 – 05/2026",
         bullets: [
-          "Müşteri ilişkileri ve mağaza operasyon süreçlerinde görev alma",
-          "Ürün yerleşimi, stok düzeni ve mağaza akışının yönetimi",
-          "Kasiyer süreçleri ve ödeme sistemleri kullanımı",
-          "Yoğun tempoda hızlı problem çözme ve operasyon desteği",
+          "Müşteri ilişkileri ve satış süreçlerinde aktif görev alma",
+          "Ürün yerleşimi ve stok düzeninin sağlanması",
+          "Kasiyer işlemleri ve ödeme sistemlerinin kullanılması",
+          "Mağaza operasyonlarının günlük işleyişine destek verilmesi",
+          "Müşteri memnuniyeti odaklı hizmet sunulması",
         ],
       },
       {
         role: "Mağaza Sorumlusu & Kasiyer",
-        company: "Ziyafe Kayseri Mutfağı — Maltepe Park AVM",
+        company: "Ziyafe Kayseri Mutfağı",
         date: "12/2025 – 01/2026",
         bullets: [
-          "POS, nakit ve dijital ödeme sistemlerinin kullanımı",
-          "Günlük kasa işlemleri, satış verileri ve stok takibi",
-          "Ekip koordinasyonu ve vardiya süreçlerine destek",
-          "Yoğun müşteri trafiğinde operasyonel akışın sürdürülmesi",
+          "Günlük mağaza operasyonlarının yönetimi",
+          "POS ve ödeme sistemlerinin kullanımı",
+          "Stok kontrolü ve ürün takibi",
+          "Müşteri memnuniyetinin sağlanması",
+          "Ekip koordinasyonuna destek verilmesi",
         ],
       },
       {
@@ -141,9 +148,9 @@ const content = {
         bullets: [
           "Web sitesi içerik ve görsel düzenlemeleri",
           "WordPress tabanlı içerik güncellemeleri",
-          "Google Ads kampanyalarında operasyon desteği",
+          "Google Ads kampanyalarına operasyonel destek",
           "SEO uyumlu içerik düzenlemeleri",
-          "CorelDRAW, Illustrator ve AutoCAD ile görsel çalışmalar",
+          "CorelDRAW, Illustrator ve AutoCAD ile tasarım çalışmaları",
         ],
       },
       {
@@ -151,10 +158,10 @@ const content = {
         company: "Karakaş Medya",
         date: "11/2024 – 12/2024",
         bullets: [
-          "Dijital ajans hizmetlerinin potansiyel müşterilere tanıtılması",
-          "SEO, sosyal medya ve web hizmetleri hakkında müşteri bilgilendirmesi",
-          "Randevu, teklif ve müşteri iletişim süreçlerinin takibi",
-          "Kreatif hizmet projelerinde operasyonel destek",
+          "Dijital hizmetlerin müşterilere tanıtılması",
+          "SEO, sosyal medya ve web hizmetleri konusunda müşteri bilgilendirmesi",
+          "Teklif ve müşteri takip süreçlerine destek verilmesi",
+          "Müşteri memnuniyeti ve süreç yönetimine katkı sağlanması",
         ],
       },
     ],
@@ -169,44 +176,45 @@ const content = {
       {
         school: "Selçuk Üniversitesi",
         program: "İngiliz Dili ve Edebiyatı",
-        degree: "Lisans",
-        status: "Bırakıldı",
+        degree: "Lisans Eğitimi",
+        status: "Tamamlanmadı",
       },
     ],
 
     languageText:
-      "İngilizce: Teknik dokümanları ve eğitim içeriklerini takip edebilecek, günlük ve iş odaklı iletişim kurabilecek düzeyde.",
+      "İngilizce: Teknik doküman okuyabilme, eğitim içeriklerini takip edebilme ve iş ortamında yazılı iletişim kurabilme.",
 
     contactText:
-      "Junior web developer, frontend, WordPress ve teknik destek odaklı roller için iletişime açığım.",
+      "Operasyon, müşteri ilişkileri, dijital süreçler, WordPress, teknik destek ve web teknolojileri odaklı roller için iletişime açığım.",
 
     toggleLabel: "EN",
   },
 
   en: {
     nav: ["About", "Projects", "Skills", "Experience", "Contact"],
-    badge: "Junior Web Developer",
+    badge: "Technology & Digital Operations",
     name: "Halit Erdoğan Duman",
     titleLine:
-      "Frontend Development • JavaScript Learning • WordPress • Git/GitHub",
+      "Digital Operations • WordPress • Customer Relations • Web Technologies",
     heroDesc:
-      "A junior developer candidate focused on frontend technologies and modern web development, interested in building working systems and solving technical problems.",
+      "I have experience in sales, customer relations, store operations, digital content management and basic web technologies. As a fast-learning, solution-oriented and technology-driven candidate, I aim to contribute to operational and technical processes.",
     ctaPrimary: "Download CV",
     ctaSecondary: "LinkedIn",
     ctaTertiary: "GitHub",
 
     quick: {
       location: "Istanbul / Kartal",
-      openTo: "Open to junior web roles, internships and project-based work",
-      phone: "+90 545 286 50 78",
-      mail: "erdogand159@gmail.com",
+      openTo:
+        "Open to operations, digital processes, WordPress and technical support roles",
+      phone: links.phone,
+      mail: links.mail,
     },
 
     sections: {
-      about: { title: "About", subtitle: "Short profile" },
-      projects: { title: "Projects", subtitle: "Portfolio and learning projects" },
-      learning: { title: "Currently Learning", subtitle: "Active growth areas" },
-      skills: { title: "Technical Skills", subtitle: "Main focus areas" },
+      about: { title: "About", subtitle: "Professional profile" },
+      highlights: { title: "Highlights", subtitle: "Key strengths" },
+      projects: { title: "Projects", subtitle: "Digital and technical works" },
+      skills: { title: "Skills", subtitle: "Technical and professional skills" },
       experience: { title: "Experience", subtitle: "Work background" },
       education: { title: "Education", subtitle: "Academic background" },
       language: { title: "Language", subtitle: "English level" },
@@ -214,61 +222,64 @@ const content = {
     },
 
     aboutText:
-      "I have experience with WordPress setup, website editing, content management and basic frontend development. I enjoy understanding technical systems, solving problems and building working structures. I am currently improving my JavaScript, React and modern web development skills.",
+      "I am a technology-oriented and fast-learning candidate with work experience across different sectors. I have experience in sales, customer relations, store operations, digital content management and basic web technologies. I can take responsibility in busy work environments, adapt quickly to new systems and contribute with a solution-focused approach.",
 
-    learning: [
-      "Strengthening JavaScript fundamentals",
-      "React component logic",
-      "Modern web development with Next.js",
-      "Basic TypeScript usage",
-      "Publishing projects regularly on GitHub",
+    highlights: [
+      "Experience in sales, customer relations and store operations",
+      "WordPress, content management and basic SEO knowledge",
+      "HTML, CSS, JavaScript, Git and GitHub usage",
+      "CorelDRAW, Adobe Illustrator and basic AutoCAD knowledge",
+      "Problem solving and team coordination in busy environments",
+      "Fast adaptation to new systems and technical processes",
     ],
 
     projects: [
       {
         title: "Personal Portfolio Website",
         description:
-          "A responsive portfolio website that presents personal information, links, technical skills and projects on a single page.",
+          "A responsive portfolio website that presents personal information, links, skills and projects on a single page.",
         stack: ["Next.js", "TypeScript", "Tailwind CSS"],
         live: links.portfolio,
         repo: "https://github.com/erdogndmn/my-portfolio",
       },
       {
-        title: "WordPress Website Edits",
+        title: "Digital Content & Website Management",
         description:
-          "WordPress experience including website content editing, visual updates and basic page management.",
+          "Content updates, visual edits, page management and SEO-friendly content editing on WordPress-based websites.",
         stack: ["WordPress", "SEO", "Content Management"],
         live: "",
         repo: "",
       },
       {
-      title: "Minecraft Server Config Generator",
-      description:
-       "Interactive web tool for generating customizable Minecraft server.properties configuration files based on user input.",
-      stack: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
-      live: "https://minecraft-server-config-generator.vercel.app",
-      repo: "https://github.com/erdogndmn/minecraft-server-config-generator",
+        title: "Minecraft Server Config Generator",
+        description:
+          "An interactive web tool that generates customizable server.properties files for Minecraft servers.",
+        stack: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
+        live: "https://minecraft-server-config-generator.vercel.app",
+        repo: "https://github.com/erdogndmn/minecraft-server-config-generator",
       },
     ],
 
     skills: {
+      professional: [
+        "Customer Relations",
+        "Sales Operations",
+        "Stock & Product Tracking",
+        "Problem Solving",
+        "Teamwork",
+        "Operational Process Tracking",
+        "Fast Adaptation",
+      ],
       web: [
         "HTML5",
         "CSS3",
         "JavaScript",
-        "Learning React",
+        "React",
         "Next.js",
-        "Basic TypeScript",
+        "TypeScript",
         "Responsive Design",
         "WordPress",
-      ],
-      technical: [
-        "Git",
-        "GitHub",
-        "Technical problem solving",
-        "Config / ini file editing",
-        "Minecraft server configuration",
-        "Basic computer hardware knowledge",
+        "Basic SEO",
       ],
       tools: [
         "Microsoft Excel",
@@ -277,6 +288,8 @@ const content = {
         "CorelDRAW",
         "Adobe Illustrator",
         "Basic AutoCAD",
+        "Git",
+        "GitHub",
       ],
     },
 
@@ -284,23 +297,25 @@ const content = {
       {
         role: "Sales Assistant",
         company: "Migros",
-        date: "2026 – Present",
+        date: "01/2026 – 05/2026",
         bullets: [
-          "Supporting customer relations and store operations",
-          "Managing product placement, stock order and store flow",
-          "Using cashier systems and payment processes",
-          "Providing fast problem-solving support in a busy work environment",
+          "Actively supported customer relations and sales processes",
+          "Handled product placement and stock organization",
+          "Used cashier systems and payment processes",
+          "Supported daily store operations",
+          "Provided customer satisfaction-oriented service",
         ],
       },
       {
         role: "Store Supervisor & Cashier",
-        company: "Ziyafe Kayseri Mutfağı — Maltepe Park AVM",
+        company: "Ziyafe Kayseri Mutfağı",
         date: "12/2025 – 01/2026",
         bullets: [
-          "Using POS, cash and digital payment systems",
-          "Tracking daily cash operations, sales data and stock",
-          "Supporting team coordination and shift processes",
-          "Maintaining operational flow during peak customer traffic",
+          "Managed daily store operations",
+          "Used POS and payment systems",
+          "Tracked stock and products",
+          "Ensured customer satisfaction",
+          "Supported team coordination",
         ],
       },
       {
@@ -308,11 +323,11 @@ const content = {
         company: "Multi Reklam",
         date: "08/2025 – 10/2025",
         bullets: [
-          "Website content and visual updates",
-          "WordPress-based content edits",
-          "Operational support in Google Ads campaigns",
-          "SEO-friendly content editing",
-          "Visual works with CorelDRAW, Illustrator and AutoCAD",
+          "Updated website content and visuals",
+          "Managed WordPress-based content updates",
+          "Provided operational support for Google Ads campaigns",
+          "Edited SEO-friendly content",
+          "Created visual works using CorelDRAW, Illustrator and AutoCAD",
         ],
       },
       {
@@ -320,10 +335,10 @@ const content = {
         company: "Karakaş Medya",
         date: "11/2024 – 12/2024",
         bullets: [
-          "Presenting digital agency services to potential clients",
-          "Informing clients about SEO, social media and web services",
-          "Following appointment, offer and customer communication processes",
-          "Operational support in creative service projects",
+          "Presented digital services to customers",
+          "Informed customers about SEO, social media and web services",
+          "Supported offer and customer follow-up processes",
+          "Contributed to customer satisfaction and process management",
         ],
       },
     ],
@@ -338,16 +353,16 @@ const content = {
       {
         school: "Selçuk University",
         program: "English Language and Literature",
-        degree: "Bachelor’s Degree",
-        status: "Discontinued",
+        degree: "Bachelor’s Education",
+        status: "Not Completed",
       },
     ],
 
     languageText:
-      "English: Able to follow technical documents and educational content, and communicate in daily and work-related contexts.",
+      "English: Able to read technical documents, follow educational content and communicate in writing in business contexts.",
 
     contactText:
-      "Open to junior web developer, frontend, WordPress and technical support focused roles.",
+      "Open to roles focused on operations, customer relations, digital processes, WordPress, technical support and web technologies.",
 
     toggleLabel: "TR",
   },
@@ -387,8 +402,12 @@ function Card({
           <span className="h-px w-6 bg-zinc-700" />
           {title}
         </h2>
-        {subtitle ? <p className="mt-1 text-sm text-zinc-400">{subtitle}</p> : null}
+
+        {subtitle ? (
+          <p className="mt-1 text-sm text-zinc-400">{subtitle}</p>
+        ) : null}
       </div>
+
       <div className="mt-4 text-zinc-300">{children}</div>
     </section>
   );
@@ -502,23 +521,34 @@ export default function Page() {
         </section>
 
         <section className="mt-14 grid gap-6 md:grid-cols-2">
-          <Card id="about" title={c.sections.about.title} subtitle={c.sections.about.subtitle}>
+          <Card
+            id="about"
+            title={c.sections.about.title}
+            subtitle={c.sections.about.subtitle}
+          >
             <p className="leading-relaxed">{c.aboutText}</p>
           </Card>
 
-          <Card title={c.sections.education.title} subtitle={c.sections.education.subtitle}>
+          <Card
+            title={c.sections.highlights.title}
+            subtitle={c.sections.highlights.subtitle}
+          >
             <ul className="space-y-2">
-              {c.education.map((e) => (
-                <li key={e.school + e.program}>
-                  <span className="font-medium text-zinc-100">{e.school}</span>{" "}
-                  — {e.program} ({e.degree}, {e.status})
+              {c.highlights.map((item) => (
+                <li key={item} className="flex gap-2 text-sm">
+                  <span className="mt-1.5 h-1.5 w-1.5 rounded-full bg-emerald-400" />
+                  <span>{item}</span>
                 </li>
               ))}
             </ul>
           </Card>
 
           <div className="md:col-span-2">
-            <Card id="projects" title={c.sections.projects.title} subtitle={c.sections.projects.subtitle}>
+            <Card
+              id="projects"
+              title={c.sections.projects.title}
+              subtitle={c.sections.projects.subtitle}
+            >
               <div className="grid gap-4 md:grid-cols-3">
                 {c.projects.map((p) => (
                   <div
@@ -553,6 +583,7 @@ export default function Page() {
                           Live
                         </a>
                       ) : null}
+
                       {p.repo ? (
                         <a
                           className="text-zinc-200 underline transition hover:text-zinc-50"
@@ -570,32 +601,27 @@ export default function Page() {
             </Card>
           </div>
 
-          <Card title={c.sections.learning.title} subtitle={c.sections.learning.subtitle}>
-            <ul className="space-y-2">
-              {c.learning.map((item) => (
-                <li key={item} className="flex gap-2 text-sm">
-                  <span className="mt-1.5 h-1.5 w-1.5 rounded-full bg-emerald-400" />
-                  <span>{item}</span>
-                </li>
-              ))}
-            </ul>
-          </Card>
-
-          <Card id="skills" title={c.sections.skills.title} subtitle={c.sections.skills.subtitle}>
+          <Card
+            id="skills"
+            title={c.sections.skills.title}
+            subtitle={c.sections.skills.subtitle}
+          >
             <div className="space-y-4">
               <div>
-                <SectionTitle>Web & Frontend</SectionTitle>
+                <SectionTitle>
+                  {lang === "tr" ? "Profesyonel" : "Professional"}
+                </SectionTitle>
                 <div className="flex flex-wrap gap-2">
-                  {c.skills.web.map((s) => (
+                  {c.skills.professional.map((s) => (
                     <Chip key={s}>{s}</Chip>
                   ))}
                 </div>
               </div>
 
               <div>
-                <SectionTitle>Technical</SectionTitle>
+                <SectionTitle>Web & Digital</SectionTitle>
                 <div className="flex flex-wrap gap-2">
-                  {c.skills.technical.map((s) => (
+                  {c.skills.web.map((s) => (
                     <Chip key={s}>{s}</Chip>
                   ))}
                 </div>
@@ -612,12 +638,33 @@ export default function Page() {
             </div>
           </Card>
 
-          <Card title={c.sections.language.title} subtitle={c.sections.language.subtitle}>
+          <Card
+            title={c.sections.education.title}
+            subtitle={c.sections.education.subtitle}
+          >
+            <ul className="space-y-2">
+              {c.education.map((e) => (
+                <li key={e.school + e.program}>
+                  <span className="font-medium text-zinc-100">{e.school}</span>{" "}
+                  — {e.program} ({e.degree}, {e.status})
+                </li>
+              ))}
+            </ul>
+          </Card>
+
+          <Card
+            title={c.sections.language.title}
+            subtitle={c.sections.language.subtitle}
+          >
             <p className="leading-relaxed">{c.languageText}</p>
           </Card>
 
           <div className="md:col-span-2">
-            <Card id="experience" title={c.sections.experience.title} subtitle={c.sections.experience.subtitle}>
+            <Card
+              id="experience"
+              title={c.sections.experience.title}
+              subtitle={c.sections.experience.subtitle}
+            >
               <div className="grid gap-4 md:grid-cols-2">
                 {c.experience.map((e) => (
                   <div
@@ -641,7 +688,11 @@ export default function Page() {
           </div>
 
           <div className="md:col-span-2">
-            <Card id="contact" title={c.sections.contact.title} subtitle={c.sections.contact.subtitle}>
+            <Card
+              id="contact"
+              title={c.sections.contact.title}
+              subtitle={c.sections.contact.subtitle}
+            >
               <p className="leading-relaxed">{c.contactText}</p>
 
               <div className="mt-4 flex flex-wrap gap-3">
@@ -650,6 +701,13 @@ export default function Page() {
                   className="rounded-2xl border border-zinc-800 bg-zinc-900/30 px-5 py-3 text-sm font-medium text-zinc-100 transition hover:bg-zinc-900/60"
                 >
                   Email
+                </a>
+
+                <a
+                  href={`tel:${links.phone.replaceAll(" ", "")}`}
+                  className="rounded-2xl border border-zinc-800 bg-zinc-900/30 px-5 py-3 text-sm font-medium text-zinc-100 transition hover:bg-zinc-900/60"
+                >
+                  Phone
                 </a>
 
                 <a
@@ -675,7 +733,8 @@ export default function Page() {
         </section>
 
         <footer className="mt-16 text-sm text-zinc-500">
-          © {new Date().getFullYear()} {c.name} — Built with Next.js & Tailwind CSS
+          © {new Date().getFullYear()} {c.name} — Designed & Developed by Halit
+          Erdoğan Duman
         </footer>
       </div>
     </main>
